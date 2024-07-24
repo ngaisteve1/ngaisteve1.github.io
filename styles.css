@@ -691,6 +691,10 @@ ul.keywords li:hover {
     background-color: #B2EBF2
 }
 
+.acc-title.highlight3 {
+    background-color: #FF9800
+}
+
 .acc-active .acc-title,
 .acc-title:hover {
     cursor: pointer
