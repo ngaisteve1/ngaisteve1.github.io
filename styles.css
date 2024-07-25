@@ -857,18 +857,18 @@ ul.keywords li:hover {
         max-width: 150px
     }
 
-    #languages {
+    #languages,
+    #interests {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         -webkit-justify-content: flex-start;
         justify-content: flex-start;
     }
 
-    #languages li {
+    #languages li,
+    #interests li {
         width: 100%;
         /* Take full width */
-        padding: 0.5em 0;
-        /* Adjust padding as needed */
     }
 }
 
