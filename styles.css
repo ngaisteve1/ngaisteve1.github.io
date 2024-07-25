@@ -856,6 +856,20 @@ ul.keywords li:hover {
     .display {
         max-width: 150px
     }
+
+    #languages {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+    }
+
+    #languages li {
+        width: 100%;
+        /* Take full width */
+        padding: 0.5em 0;
+        /* Adjust padding as needed */
+    }
 }
 
 @media screen and (min-width:700px) and (max-width:1280px) {
