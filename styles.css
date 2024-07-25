@@ -679,7 +679,7 @@ ul.keywords li:hover {
     position: relative;
     transition: all .2s ease-in-out;
     font-size: 1em;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-underline-position: under
 }
 
