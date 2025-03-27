@@ -514,53 +514,32 @@
           <div class="acc-title highlight2">Personal Trivia Projects &amp; POCs and Mock-Ups | Aug2022 - now</div>
           <div class="acc-content">
             <ul class="highlights">
-              <li>July-Aug 2023: Set up and created a <a href="https://dagster.io/">Dagster</a> ETL data pipeline (<a
-                  href="https://youtu.be/ajQyeECOJf4">Send request to Hacker News API nd generate CSV file</a> and <a
-                  href="https://github.com/ngaisteve1/dagster-demo2">read from SQL Server</a>) that scheduled to run
-                every hour in Python.</li>
-              <li>Jun 2023: Set up the <a
-                  href="https://github.com/ngaisteve1/eShopOnContainers/actions">eShopOnContainers</a> using Azure
-                Kubernetes Service to enable continuous deployment to GitLab actions. This setup involves creating a
-                Pull Request to initiate the code review workflow. Once the review is successful, the Pull Request can
-                be manually approved, triggering another workflow to build images and push them to the Azure Container
-                Registry. This setup utilizes Azure Active Directory for authentication.<i
-                  class="fa fa-info-circle tool"
-                  title="It failed at &quot;build images&quot; step. Troubleshooting is still a work in progress."></i>
+              <li>July-Aug 2023: Built a <a href="https://dagster.io/">Dagster</a> ETL data pipeline in Python,
+                scheduled to run hourly.
+                <a href="https://youtu.be/ajQyeECOJf4">Fetched data from Hacker News API and generated CSV</a>, and
+                <a href="https://github.com/ngaisteve1/dagster-demo2">read data from SQL Server</a>.
               </li>
-              <li>June 2023: Installed and deployed <a
-                  href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Local-Kubernetes">.NET 7
-                  eShopOnContainers to Local Kubernetes</a> using Docker Desktop and Helm.<i
-                  class="fa fa-info-circle tool"
-                  title="Some services fail to start up. Troubleshooting is challenging on a local machine as it consumes too many resources."></i>
+              <li>June 2023: Configured <a
+                  href="https://github.com/ngaisteve1/eShopOnContainers/actions">eShopOnContainers</a> with Azure
+                Kubernetes Service (AKS) for CI/CD using GitLab Actions.
+                Integrated Azure Active Directory for authentication.
               </li>
-              <li>June 2023: Successfully deployed .NET 7 eShopOnContainers locally using Docker Desktop. Deployment
-                time ~12 minutes.</li>
-              <li>May 2023: Created a <a href="https://github.com/ngaisteve1/Sloopee">mock eCommerce solution</a> with
-                microservices project and folder structure which implement GraphQL, Azure Functions, Azure Service Bus.
-              </li>
-              <li>May 2023: Created <a href="https://github.com/ngaisteve1/AzureFunctionsDemo">two demo .NET 6 projects
-                  in a solution</a>: a web app using Blazor Server, which sends web API requests (query string and
-                request body) to Azure Functions and receives a string response to display on the web app. Also added
-                Azure AppInsights to monitor web api request, exception and performance.</li>
-              <li>Apr 2023: Created and maintaining a personal static website using html, javascript, Github pages and
-                Github Action (CI/CD).</li>
-              <li>Mar 2023: <a href="https://github.com/ngaisteve1/CafePos">Designed a database for a mock Cafe POS
-                  system</a></li>
-              <li>Mar 2023: Implemented Cloudflare for my <a href="http://www.findingsteve.net/">personal website</a> to
-                enhance its performance and security. Optimized my <a
-                  href="https://gtmetrix.com/reports/resume.findingsteve.net/rLm5UjVC/">online resume webpage to achieve
-                  100/100 performance in GTmetrix</a> and <a href="https://tools.pingdom.com/#61b4b2f31e800000">90/100
-                  in pingdom</a>.</li>
-              <li>Mar 2023: Deployed a <a href="https://ngaisteve1.github.io/">Jekyll Ruby website</a> with <a
-                  href="https://github.com/ngaisteve1/ngaisteve1.github.io/actions">Github Action (CI/CD)</a>.</li>
-              <li>Feb 2023: Completed <a href="https://github.com/ngaisteve1/blockchainether">Ethereum blockchain web
-                  api mock project using .NET 7 and EF Core</a>. Duration ~3-4 days.</li>
-              <li>Nov 2022: Setup SonarQube and SonarCloud to automate code review in Azure DevOps (CI Pipeline).</li>
-              <li>Sep 2022: Setup Portainer locally. <a href="https://youtu.be/DQPeaDsMdWk">Deployed container using
-                  Portainer (Pull from DockerHub)</a>.</li>
-              <li>Aug 2022: <a href="https://ngaisteve1.github.io/learnazure/">Deployed Web API (NET 6) to Azure App
-                  Service Container, Azure SQL Server and Azure Static Web App using GitHub Actions Workflow
-                  (CI/CD)</a>.</li>
+              <li>June 2023: Deployed .NET 7 <a
+                  href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Local-Kubernetes">eShopOnContainers
+                  to Local Kubernetes</a> using Docker Desktop and Helm.</li>
+              <li>May 2023: Built <a href="https://github.com/ngaisteve1/Sloopee">a mock eCommerce microservices
+                  solution</a> using GraphQL, Azure Functions, and Azure Service Bus.</li>
+              <li>May 2023: Developed <a href="https://github.com/ngaisteve1/AzureFunctionsDemo">Azure Functions demo
+                  projects</a> (Blazor Server + Web API). Integrated Azure AppInsights for monitoring.</li>
+              <li>Mar 2023: Optimized <a href="https://gtmetrix.com/reports/resume.findingsteve.net/rLm5UjVC/">online
+                  resume</a> for 100/100 GTmetrix performance and 90/100 in Pingdom.</li>
+              <li>Mar 2023: Deployed a <a href="https://ngaisteve1.github.io/">Jekyll-based website</a> with <a
+                  href="https://github.com/ngaisteve1/ngaisteve1.github.io/actions">GitHub Actions CI/CD</a>.</li>
+              <li>Feb 2023: Built a <a href="https://github.com/ngaisteve1/blockchainether">mock Ethereum blockchain Web
+                  API</a> using .NET 7 and EF Core in 3-4 days.</li>
+              <li>Nov 2022: Automated code reviews in Azure DevOps CI pipeline with SonarQube and SonarCloud.</li>
+              <li>Aug 2022: Deployed <a href="https://ngaisteve1.github.io/learnazure/">.NET 6 Web API to Azure</a>
+                using GitHub Actions (CI/CD).</li>
             </ul>
           </div>
         </div>
@@ -643,7 +622,8 @@
               <li>Jun 2021: Migrated <a href="http://resume.findingsteve.net/">online resume</a> to Pug + SCSS, reducing
                 file size by 40% and improving maintainability.</li>
               <li>Apr 2021: Parsed <strong>1,000 complex XML files</strong> into Elasticsearch using NEST C# in
-                <strong>15 minutes</strong> with advanced search options.</li>
+                <strong>15 minutes</strong> with advanced search options.
+              </li>
               <li>Feb 2021: Completed <a href="https://github.com/ngaisteve1/ThaiPayment">take-home technical
                   assignment</a> in 24 hours (given 48 hours). Built a .NET Core Web API service to <strong>upload,
                   parse, and query transactions</strong> from XML & CSV.</li>
