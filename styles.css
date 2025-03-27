@@ -1,3 +1,9 @@
+/* Add this to styles.css */
+.section-clicked {
+    border: 1px dashed #ff6d1f; /* Change the color and thickness as needed */
+    background-color: #f0f0f0; /* Change the background color as needed */
+}
+
 #resume.dark-mode {
     background-color: #40484f;
     color: #eee
