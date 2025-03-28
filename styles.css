@@ -218,15 +218,18 @@ table {
     font-display: swap
 }
 
-body,
 html {
+    font-size: 16px; /* Base font size */
+}
+
+body {
     font-family: Mulish, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
-    line-height: 1.46153846;
+    line-height: 1.5;
     text-align: left;
-    -webkit-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%;
 }
 
 button {
@@ -391,8 +394,7 @@ h2.section-title {
     display: inline-block;
     background: #fff;
     padding: 0 1em .3em 0;
-    color: #ff6d1f;
-    text-transform: uppercase;
+    color: #ff6d1f;    
     font-weight: 600;
     border: none;
     font-size: 1rem
@@ -895,8 +897,18 @@ ul.keywords li:hover {
 }
 
 @media print {
+    
     body, html {
-        font-size: 12px !important;
+        font-size: 13px;
+        line-height: 1.5;
+        color: black;
+        font-family: serif;
+    }
+
+    .skill-alternate {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 5px !important;
     }
 
     #experience .acc-container {
@@ -905,6 +917,15 @@ ul.keywords li:hover {
         padding: 10px;
         margin-bottom: 10px;
     }
+
+    .recent-employment {
+        page-break-before: always;
+    }
+
+    /* Hide the Skills section */
+    /*.sectionSkill {
+        display: none !important;
+    }*/
 
     #languages,
     #skills {
@@ -1001,7 +1022,7 @@ ul.keywords li:hover {
         text-decoration: none !important
     }
 
-    #experience,
+    /*#experience,*/
     #preference {
         page-break-before: always
     }
@@ -1013,4 +1034,9 @@ ul.keywords li:hover {
     #soft-skills {
         display: none
     }
+
+    .acc-title {
+        font-size: 13px !important;
+    }
+
 }

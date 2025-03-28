@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/ngaisteve1.github.io/config
+/.vs/ngaisteve1.github.io/copilot-chat/af8bb3cc/sessions
+/.vs/ngaisteve1.github.io/CopilotIndices/17.13.441.19478
+/.vs/ngaisteve1.github.io/FileContentIndex
+/.vs/slnx.sqlite
