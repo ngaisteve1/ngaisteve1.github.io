@@ -1,7 +1,9 @@
-/* Add this to styles.css */
 .section-clicked {
-    border: 1px dashed #ff6d1f; /* Change the color and thickness as needed */
-    background-color: #f0f0f0; /* Change the background color as needed */
+    border: 3px dashed;
+    background-color: #FFE1D1;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
 #resume.dark-mode {
@@ -893,6 +895,16 @@ ul.keywords li:hover {
 }
 
 @media print {
+    body, html {
+        font-size: 12px !important;
+    }
+
+    #experience .acc-container {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 
     #languages,
     #skills {
