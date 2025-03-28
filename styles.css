@@ -6,6 +6,35 @@
     margin-bottom: 20px;
 }
 
+/* Ensure the body does not overflow */
+body {
+    overflow-x: hidden;
+}
+
+/* Ensure all elements fit within the viewport */
+* {
+    box-sizing: border-box;
+}
+
+/* Ensure images and other media do not overflow */
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure sections and divs do not overflow */
+section, div {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Specific fix for the headerParent class */
+.headerParent {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
 #resume.dark-mode {
     background-color: #40484f;
     color: #eee
