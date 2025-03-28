@@ -32,8 +32,29 @@ section, div {
 .headerParent {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between; /* Ensures children stay within bounds */
+    align-items: center;
     max-width: 100%;
+    overflow: hidden; /* Prevents overflow */
 }
+
+.child {
+    flex: 1; /* Ensures equal distribution */
+    min-width: 0; /* Prevents flexbox from expanding beyond container */
+}
+
+.profilephoto {
+    display: flex;
+    justify-content: center; /* Centers the image */
+    align-items: center;
+    max-width: 150px; /* Ensures it doesn’t take too much space */
+}
+
+    .profilephoto img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
 
 #resume.dark-mode {
     background-color: #40484f;
