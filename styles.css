@@ -744,7 +744,7 @@ ul.keywords {
         page-break-before: always
     }
 
-    #languages, #skills {
+    #languages, #skills, #interests {
         display: block
     }
 
