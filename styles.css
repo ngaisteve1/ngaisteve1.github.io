@@ -770,6 +770,10 @@ ul.keywords li:hover {
     display: inline-block
 }
 
+.acc-content p {
+    margin-top: 10px;
+}
+
 .acc-content {
     height: auto;
     overflow: hidden;
