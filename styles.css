@@ -1,9 +1,49 @@
-.section-clicked {
+﻿.section-clicked {
     border: 3px dashed;
     background-color: #FFE1D1;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 20px;
+}
+
+/*.acc-title::after {
+    content: " 🔽";*/ /* Down arrow */
+    /*font-size: 14px;
+    color: #666;
+}*/
+.highlight {
+    background-color: yellow;
+}
+
+/* Help Icon */
+.help-icon {
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    margin-left: -8px; /* Creates spacing between title and icon */
+    vertical-align: middle;
+}
+
+/* Tooltip Box */
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    display: none;
+}
+
+/* Hide skill content initially */
+.skills-content {
+    display: none;
+    padding-left: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center; /* Aligns title and icon in the same line */
 }
 
 /* Ensure the body does not overflow */
@@ -47,7 +87,7 @@ section, div {
     display: flex;
     justify-content: center; /* Centers the image */
     align-items: center;
-    max-width: 150px; /* Ensures it doesn�t take too much space */
+    max-width: 150px; /* Ensures it doesn’t take too much space */
 }
 
     .profilephoto img {

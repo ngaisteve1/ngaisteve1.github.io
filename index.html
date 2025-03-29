@@ -8,851 +8,1020 @@
 </head>
 
 <body>
-  <div id="resume">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-    <div class="headerParent">
-      <div class="child wider">
-        <header class="clear" id="header">
-          <div>
-            <h1 class="name">Steve Ngai</h1>
-            <h2 class="label">Full-Stack .NET Software Engineer</h2>
-          </div><span class="city">Kuala Lumpur, Malaysia</span>
-          <div id="profiles">
-            <div class="item">
-              <div class="username"><a href="https://api.whatsapp.com/send?phone=60163666533"></a><span
-                  class="fas fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=60163666533">(6) 016 3666
-                  533</a></div>
+    <div id="resume">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+        <div class="headerParent">
+            <div class="child wider">
+                <header class="clear" id="header">
+                    <div>
+                        <h1 class="name">Steve Ngai</h1>
+                        <h2 class="label">Full-Stack .NET Software Engineer</h2>
+                    </div><span class="city">Kuala Lumpur, Malaysia</span>
+                    <div id="profiles">
+                        <div class="item">
+                            <div class="username">
+                                <a href="https://api.whatsapp.com/send?phone=60163666533"></a><span class="fas fa-whatsapp"></span><a href="https://api.whatsapp.com/send?phone=60163666533">
+                                    (6) 016 3666
+                                    533
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="username linkedIn">
+                                <span class="fas fa-linkedin linkedin social"></span><span class="url"></span><a target="_blank" href="https://www.linkedin.com/in/findingsteve/">LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="username stackOverFlow">
+                                <span class="fas fa-stack-overflow stack-overflow social"></span><span class="url"></span><a target="_blank"
+                                                                                                                             href="https://stackoverflow.com/users/4971859/steve">
+                                    StackOverFlow <span id="so-reputation"
+                                                        style="display: none;"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
             </div>
-            <div class="item">
-              <div class="username linkedIn"><span class="fas fa-linkedin linkedin social"></span><span
-                  class="url"></span><a target="_blank" href="https://www.linkedin.com/in/findingsteve/">LinkedIn</a>
-              </div>
+            <div class="child profilephoto">
+                <picture>
+                    <source srcset="steve3.webp" type="image/webp">
+                    <source srcset="steve3.png" type="image/png">
+                    <img src="steve3.png" alt="Steve" width="150">
+                </picture>
+                <button class="dark-mode-btn" type="button" name="dark_light" onclick="toggleDarkLight()"
+                        title="Toggle dark/light mode">
+                    🌛
+                </button>
             </div>
-            <div class="item">
-              <div class="username stackOverFlow"><span class="fas fa-stack-overflow stack-overflow social"></span><span
-                  class="url"></span><a target="_blank"
-                  href="https://stackoverflow.com/users/4971859/steve">StackOverFlow <span id="so-reputation"
-                    style="display: none;"></span></a></div>
+        </div>
+        <section class="section main-summary">
+            I completed my Higher Diploma in Software Engineering and earned my Computing
+            degree (with Honours) from the University of Staffordshire. Over the past five years, I have gained extensive
+            experience in modern software development with C#.NET and Azure, including roles at multinational companies
+            (MNCs). I have supported the eSPICK system for the central bank (Bank Negara) and worked with commercial and
+            investment banks. Currently, as a Senior Software Engineer at Arvato, I focus on writing clean, maintainable, and
+            testable code. I enjoy exploring modern technologies, and recently, I have been exploring GenAI / MLOps.
+        </section>
+        <section class="section sectionSkill">
+            <header>
+                <h2 class="section-title">Skills / Technologies and Knowledge</h2> <span class="help-icon" onclick="showTooltip(event)">ℹ️</span>
+            </header>
+            <section></section>
+            <div class="accordion acc-single-open" id="skills">
+                <div class="item">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Server-Side (Back-End)</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">
+                                C#<i class="fa fa-info-circle tool"
+                                     title="OOP, Enum, Namespaces, Exception handling, Stream I/O, File, FileInfo, Delegates, Events, Func, Action, Predicate, Extension Method, Collections, Generics, Anonymous Methods, Object Initializer, XMLSerializer, XDocument, StringBuilder, TextReader, SteamReader, FileStream, DirectoryInfo, TPL, Lock, DeadLock, Data Parallelism, Task, Async Await"></i>(ASP.NET
+                                Core and .NET 6 / 8)
+                            </li>
+                            <li class="active">
+                                <a href="http://apiclient2.findingsteve.net/">C# Web API 2</a><i class="fa fa-info-circle tool"
+                                                                                                 title="Create and Consume Web Api with Javascript, JQuery, MVC and Console, Ocelot, token authentication, custom API method parameter, API routing, Cross-origin resource sharing (CORS) "></i>
+                            </li>
+                            <li class="active">
+                                <a href="http://sapi.findingsteve.net/">ASP.NET Identity</a><i class="fa fa-info-circle tool"
+                                                                                               title="register, login, role, authorize attribute, token, bearer. MVC / Razor Pages / Web Api"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://youtu.be/8v-RF1-OfyU">LINQ</a><i class="fa fa-info-circle tool"
+                                                                                  title="LINQ Query and LINQ Method Syntax. LINQ-To-Objects. Linq-To-Entity (EF)."></i>
+                            </li>
+                            <li class="active">
+                                FluentValidation<i class="fa fa-info-circle tool"
+                                                   title="FluentValidation, FluentValidation.WebApi, FluentValidation.AspNetCore"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7T3BA9eSEF4ullWkIF9iNuS">
+                                    Identity Server
+                                    4
+                                </a><i class="fa fa-info-circle tool" title="Basic"></i>
+                            </li>
+                            <li class="active">Automapper<i class="fa fa-info-circle tool" title="Basic"></i></li>
+                            <li class="active">
+                                <a href="https://youtu.be/JyaLjBbBmuA">NUnit</a>,<a href="https://github.com/ngaisteve1/xunit.sample">XUnit</a><i class="fa fa-info-circle tool"
+                                                                                                                                                  title="Automated Unit Testing (C# Console), xUnit basic: Fact, Theory, Inline, MOQ"></i>
+                            </li>
+                            <li class="active">
+                                Logging<i class="fa fa-info-circle tool"
+                                          title="Serilog and Seq, Log4Net, NLog.Extensions.Logging"></i>,<a href="https://youtu.be/iQDoL94IRuc">Serilog and Seq</a>
+                            </li>
+                            <li class="active">
+                                <a href="https://youtu.be/zQ_pJCUEM5k">Swagger / SwashBuckle</a><i class="fa fa-info-circle tool" title="Basic setup"></i>
+                            </li>
+                            <li class="active"><a href="https://www.hangfire.io/">HangFire</a></li>
+                            <li class="active"><a href="https://youtu.be/jZ_9ECuOhmU">Health Checks</a></li>
+                            <li class="inactive">
+                                Yarn<i class="fa fa-info-circle tool" title="yarn add, yarn serve, yarn build"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://youtu.be/xMtQOJUs_TI">NPM</a><i class="fa fa-info-circle tool"
+                                                                                 title="Download, Install And Use Package Using NPM"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://youtu.be/fSW18n8jH28">Node.js</a><i class="fa fa-info-circle tool"
+                                                                                     title="Set Up Node.JS and Hello World, Create And Include Your Own Node.JS Modules, Read directory, files and file content"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://youtu.be/fSW18n8jH28">Ruby on Rails</a><i class="fa fa-info-circle tool"
+                                                                                           title="Set Up Ruby on Rails in Window and Ubuntu, Run default todo app, CRUD with Sqlite, MVC, routing"></i>
+                            </li>
+                            <li class="inactive">
+                                VB.NET (Web Forms)<i class="fa fa-info-circle tool"
+                                                     title="Stop practicing for long time"></i>
+                            </li>
+                            <li class="inactive">
+                                Classic ASP<i class="fa fa-info-circle tool"
+                                              title="Stop practicing for long time"></i>
+                            </li>
+                            <li class="inactive">Java<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item skill-alternate">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Data and Tools (Back-End)</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">
+                                RDBMS Database Design and SQL<i class="fa fa-info-circle tool"
+                                                                title="Primary key, Foreign key, Composite key, Normalization, One-To-Many relationship, inner join, left join, right join"></i>
+                            </li>
+                            <li class="active">
+                                Entity Framework Core (ORM)<i class="fa fa-info-circle tool"
+                                                              title="EF 6 / EF Core 2. Code Convention and Fluent API. Model configuration with code convention or fluent API. Model validation with data annotation or Fluent Validation. EF migration. Table per Hierarchy (TPH) Inheritence pattern. Database-First (edmx) and Code-First approach. Data Context. POCO entities. Property Navigation. Enum property. Entity State. HasData seeding (EF Core)."></i>
+                            </li>
+                            <li class="active">
+                                ADO.NET<i class="fa fa-info-circle tool"
+                                          title="Data Adapter, Command, Data Reader, Connection"></i>
+                            </li>
+                            <li class="active">JSON</li>
+                            <li class="active">XML</li>
+                            <li class="active">Datawarehouse / DataLake</li>
+                            <li class="active">SQL Server<i class="fa fa-info-circle tool" title="2019"></i></li>
+                            <li class="active">Stored Procedure</li>
+                            <li class="active">SQL Management Studio<i class="fa fa-info-circle tool" title="18.5.1"></i></li>
+                            <li class="active">PostgreSQL<i class="fa fa-info-circle tool" title="13"></i></li>
+                            <li class="inactive">MySQL<i class="fa fa-info-circle tool" title="Stop using for long time"></i></li>
+                            <li class="inactive">
+                                PHPMyAdmin<i class="fa fa-info-circle tool" title="Stop using for long time"></i>
+                            </li>
+                            <li class="inactive">Db2<i class="fa fa-info-circle tool" title="Stop using for long time"></i></li>
+                            <li class="active">pgAdmin<i class="fa fa-info-circle tool" title="4 v4.26"></i></li>
+                            <li class="inactive">DBeaver<i class="fa fa-info-circle tool" title="7.3.2"></i></li>
+                            <li class="active">SQLite</li>
+                            <li class="active">NoSql<i class="fa fa-info-circle tool" title="Elastic Search and MongoDb"></i></li>
+                            <li class="active">
+                                MongoDb<i class="fa fa-info-circle tool"
+                                          title="installation mongodb server in Window and via NPM, start mongodb server, show dbs, use [db], show collections, db.[collection].find().pretty(), db.dropDatabase(), db.[collection].drop(), parse XML to MongoDb with nodejs, MongoDB Compass, Studio 3T, MongoDB Atlas"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7Q-LptF9pKRC2loy-_qCbE0"></a>Elasticsearch and
+                                Kibana<i class="fa fa-info-circle tool"
+                                         title="ElasticSearch 7.9: Install ElasticSearch, Elastic Cloud, ElasticSearch Head Chrome Extension, Kibana Console, Indexing, Analyzed, Query Match, Query Match_Phrase, Query Multi_Match, Query Query_String, Query Fuzzy, Query Bool, Query WildCard, Query Range, Sort, Query Term, Query Regex, Query URI Search (simple query string) and curl, Debugging. NEST 7.5.1: Setup, Search Query, IndexManyAsync, IndexDocumentAsync, ReIndex."></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Client-side (Front-End)</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">
+                                <a href="http://js.findingsteve.net/">Javascript</a><i class="fa fa-info-circle tool"
+                                                                                       title="list object array, object, Array.prototype, push, string interpolation, let and const (ES6), arrow function (ES6), classic switch case closest, remove, filter, find, findIndex, splice, slice, conditional (ternary) operator, JSON.stringify, toFixed, addEventListener, getElementsByClassName, firstChild, nextSibling, lastChild, removeChild(), classic for loop, for ... in, forEach (ES5), while loop, reduce, Math.random(), Math.floor(), includes, window.setTimeout, fetch API, Promise, async, await, eval, charAt, join, regex, Chart.js, datatables.js, parsley.js,fullCalendar.js, moment.js"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7SNdT5LZhEakJrQILfTpUOO">Vue.js</a><i class="fa fa-info-circle tool"
+                                                                                                                                title="setup, install Vue and create Vue project using NPM and CLI, Template Syntax, “Mustache” syntax, Vue instance, el and data propertyOne-way Binding, Two-way Binding (v-model), Computed Properties, List Rendering (v-for, v-if), Methods and Event Handling, Using Axios to Consume APIs (Read, Add, Delete), Vue Cli, Life Cycle Hook, $Ref, Emit Events, Pass Props, Slot, Mixin, Vuex, Dev Tools, Router, with EsLint + Prettier, Font Awesome, Component, Vue Bootstrap "></i>
+                            </li>
+                            <li class="active">DevExtreme / DevExpress</li>
+                            <li class="active">
+                                <a href="https://youtu.be/7yBUpkoFZQc">Jest</a><i class="fa fa-info-circle tool"
+                                                                                  title="Javascript Testing Framework"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/watch?v=jy-adxX9Hxs&amp;list=PLIh_aKrRpW7SH03ZCMndLnKYvPIah-hYE">JQuery</a><i class="fa fa-info-circle tool"
+                                                                                                                                               title=".ajax, .each, clone, append, show, hide, addClass, removeClass, closest"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7QyDEbkPCr_Pomkr89Xw_E1">Blazor</a><i class="fa fa-info-circle tool"
+                                                                                                                                title="Blazor Server. Blazor Web Assembly. Component. Component Parameter. Dependency Injection. Layout. Invoke C# from Javascript. Cascading Parameter. Page Directive. App.razor. Navigation Manager. NavLinks. Forms and Data Annotation validation. CRUD via Web Api. "></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/watch?v=pR8xXwHQIXo&amp;list=PLIh_aKrRpW7Rz0Q3DoBO96rD1TKv6Ho_Q">Ajax</a><i class="fa fa-info-circle tool" title="consume Web Api"></i>
+                            </li>
+                            <li class="inactive">CSS 3<i class="fa fa-info-circle tool" title="flexbox, grid layout"></i></li>
+                            <li class="inactive">
+                                <a href="http://css.findingsteve.net/">Bootstrap 5</a><i class="fa fa-info-circle tool" title="Basic, Implement AdminLte template"></i>
+                            </li>
+                            <li class="inactive"><a href="http://learntodesignwebsite.findingsteve.net/">HTML 5</a></li>
+                            <li class="active">
+                                Pug<i class="fa fa-info-circle tool"
+                                      title="Basic, mixin, loop, while, includes, extends, block"></i>
+                            </li>
+                            <li class="active">
+                                <a href="https://youtu.be/iqUiPdNhwPE">Sass / Scss</a><i class="fa fa-info-circle tool"
+                                                                                         title="Basic"></i>
+                            </li>
+                            <li class="inactive">
+                                Gulps 4<i class="fa fa-info-circle tool"
+                                          title="series, parallel, delete files, compile Pug, compile scss, minify image"></i>
+                            </li>
+                            <li class="inactive">Typescript<i class="fa fa-info-circle tool" title="Basic"></i></li>
+                            <li class="inactive">
+                                <a href="https://youtu.be/g0id1KSdhl0">Babel</a><i class="fa fa-info-circle tool"
+                                                                                   title="Basic"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://www.youtube.com/watch?v=SOZtAvyEOC4&amp;list=PLIh_aKrRpW7QcIfi10uuNA360-lQa5Qmu">React.js</a><i class="fa fa-info-circle tool" title="Basic"></i>
+                            </li>
+                            <li class="inactive">Linters and Formatters (Prettier, ESLint, Beautify)</li>
+                            <li class="active">
+                                C# MVC (.NET Framework)<i class="fa fa-info-circle tool"
+                                                          title="routing, controller, action method, action selectors, action verbs, model, view, model binding, razor, help helpers, data annotation validation, layout, viewbag, tempdata, exception filters, publish and deploy to IIS"></i>
+                            </li>
+                            <li class="inactive">
+                                C# Xamarin, XAML<i class="fa fa-info-circle tool"
+                                                   title="Layout, ListView, Navigation, CRUD with SQLite, Camera, Consume Web Api"></i>
+                            </li>
+                            <li class="inactive">C# WPF<i class="fa fa-info-circle tool" title="Basic"></i></li>
+                            <li class="active">
+                                C# (ASP.NET Core)&nbsp;<a href="http://m.findingsteve.net/">Razor&nbsp;</a><a href="http://demo.findingsteve.net/">Pages</a><i class="fa fa-info-circle tool"
+                                                                                                                                                               title=".NET Core 3.1, ASP.NET Core, built-in DI/iOC, Middlewares, Setup MVC / Web Api / Razor, Action Result, Views, Layout, Tag Helpers, Publish in IIS and Azure, Global exception filter and logging"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://www.youtube.com/watch?v=5nib-KLRH4s">Android app with Java</a><i class="fa fa-info-circle tool" title="Stop practicing for long time"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item skill-alternate">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Generative AI</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">Google Colab</li>
+                            <li class="active">Python</li>
+                            <li class="active">Machine Learning Basics</li>
+                            <li class="active">Azure Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Cloud (PaaS)</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Static Web App</a></li>
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Azure App Service</a></li>
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Container Apps</a></li>
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure SQL Server</a></li>
+                            <li class="active">
+                                <a href="https://ngaisteve1.github.io/learnazure/">Azure Resource Manager (ARM)</a>
+                            </li>
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Functions</a></li>
+                            <li class="active">Azure Container Registry (ACR)</li>
+                            <li class="active">
+                                <a href="https://ngaisteve1.github.io/learnazure/">Azure Monitor / App Insights</a>
+                            </li>
+                            <li class="active">
+                                Azure Active Directory (AD)<i class="fa fa-info-circle tool"
+                                                              title="App registration"></i>
+                            </li>
+                            <li class="active">Azure Kubernetes Service (AKS)</li>
+                            <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Service Bus</a>
+                            <li class="inactive">Azure (<a href="https://youtu.be/MWUqY9Id5J8">Deploy RESTful C# Web App</a>)</li>
+                            <li class="active">Google Colab</li>
+                            <li class="inactive">Digital Ocean</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item skill-alternate">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">DevOps and Others</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">
+                                <a href="https://youtu.be/DxeONf8Ugio">Docker</a><i class="fa fa-info-circle tool"
+                                                                                    title="Add docker file, Build and Remove Image, Remove, stop and start Container, Docker run, Window Subsystem for Linux (WSL) 2, Docker Desktop, DockerHub, DockerCompose"></i>
+                            </li>
+                            <li class="active">ChatGPT</li>
+                            <li class="active">GitHub CoPilot</li>
+                            <li class="active">
+                                <a href="https://github.com/ngaisteve1?tab=repositories"> GIT / GitHub / GitLab</a><i class="fa fa-info-circle tool"
+                                                                                                                      title="init, clone, pull, push, commit, add, sync, status, branch, checkout, merge, clean, add/remove branch, GitHub Actions Workflow, fork, checkout, merge request"></i>
+                            </li>
+                            <li class="active">Azure DevOps CI/CD</li>
+                            <li class="active">Microsoft Forms</li>
+                            <li class="active">Microsoft Graphs</li>
+                            <li class="active">Power Automate</li>
+                            <li class="active">
+                                Portainer<i class="fa fa-info-circle tool"
+                                            title="setup community edition, deploy container from DockerHub"></i>
+                            </li>
+                            <li class="active">TDD / BDD (Specflow)</li>
+                            <li class="active">Agile / Scrum / Kanban</li>
+                            <li class="inactive">
+                                CMMI<i class="fa fa-info-circle tool"
+                                       title="Level 3. Stop practicing for long time"></i>
+                            </li>
+                            <li class="inactive">SDLC</li>
+                            <li class="inactive">
+                                Trello<i class="fa fa-info-circle tool"
+                                         title="Create team, create board, create card, label, filtering, calendar, checklist, copy/move card, copy/move card, change background, attach card, cover photo, due date"></i>
+                            </li>
+                            <li class="inactive">SVN<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i></li>
+                            <li class="inactive">
+                                Heroku<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://findingsteve.netlify.app/">Netlify</a><i class="fa fa-info-circle tool" title="netlify deploy"></i>
+                            </li>
+                            <li class="inactive">
+                                <a href="https://youtu.be/-VOs1sGNYHg">Travis</a><i class="fa fa-info-circle tool"
+                                                                                    title="Stop practicing for long time"></i>
+                            </li>
+                            <li class="inactive">IIS (<a href="https://youtu.be/LWWNNLnLCto">Publish Using Folder</a>)</li>
+                            <li class="inactive">Nginx</li>
+                            <li class="inactive">
+                                Prometheus<i class="fa fa-info-circle tool"
+                                             title="Basic setup and configuration"></i>
+                            </li>
+                            <li class="inactive">
+                                Zookeeper<i class="fa fa-info-circle tool"
+                                            title="Installation, Start ZooKeeper server, Start CLI, Stop ZooKeeper Server"></i>
+                            </li>
+                            <li class="inactive">Kafka<i class="fa fa-info-circle tool" title="Installation"></i></li>
+                            <li class="inactive">
+                                RabbitMQ<i class="fa fa-info-circle tool"
+                                           title="Install RabbitMQ Server locally, send and receive message"></i>
+                            </li>
+                            <li class="inactive">
+                                ActiveMQ &amp; NMS Api<i class="fa fa-info-circle tool"
+                                                         title="Install ActiveMQ locally, NMS Api send and receive message"></i>
+                            </li>
+                            <li class="active">SonarQube</li>
+                            <li class="active">
+                                <a href="https://mermaid-js.github.io/mermaid/#/">mermaidJs</a> and <a href="https://markmap.js.org/">MarkMap</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Design Principles / Design Pattern / Software Architecture</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">REST and SOAP</li>
+                            <li class="active">
+                                <a href="https://www.youtube.com/watch?v=uG0A7jxPHJo&amp;list=PLIh_aKrRpW7TRA8snCbj2wkfY6nSO_Pm2"></a>Layered
+                                Architecture<i class="fa fa-info-circle tool"
+                                               title="Core/Application/Business, Infrastructure layer (ORM), Web layer (Web API and UI)"></i>
+                            </li>
+                            <li class="active">Monolithic Architecture</li>
+                            <li class="active">
+                                Microservices Architecture<i class="fa fa-info-circle tool"
+                                                             title="API Gateway, CQRS Architectural Pattern, Docker"></i>
+                            </li>
+                            <li class="active">
+                                Clean Architecture<i class="fa fa-info-circle tool"
+                                                     title="Exploring Clean Architecture template from Jason Taylor and Steve Smith (Ardalis)"></i>
+                            </li>
+                            <li class="inactive">Domain Driven Design<i class="fa fa-info-circle tool" title="Value Object"></i></li>
+                            <li class="active">DRY</li>
+                            <li class="active">KISS</li>
+                            <li class="active">SOC</li>
+                            <li class="active">SOLID</li>
+                            <li class="active">YAGNI</li>
+                            <li class="inactive">
+                                Repository pattern<i class="fa fa-info-circle tool"
+                                                     title="Non-Generic and Generic Repository pattern"></i>
+                            </li>
+                            <li class="active">Data-centric architecture</li>
+                            <li class="active">
+                                OO Design Pattern<i class="fa fa-info-circle tool"
+                                                    title="basic Builder, Factory method, Singleton, Observer, Strategy, Command, Adapter"></i>
+                            </li>
+                            <li class="inactive"><a href="http://mvc.findingsteve.net/">M</a>VC and MVVM</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item skill-alternate">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Domain knowledge</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">Media and Broadcasting</li>
+                            <li class="active">Technology</li>
+                            <li class="active">Investment banking</li>
+                            <li class="active">Property (Real Estate)</li>
+                            <li class="inactive">Manufacturing</li>
+                            <li class="inactive">Payment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="acc-container"></div>
+                    <div class="acc-title">Learning Goals 2024 / 2025</div>
+                    <div class="acc-content">
+                        <ul class="keywords">
+                            <li class="active">Setup CI/CD for eShop</li>
+                            <li class="active">Software architecture</li>
+                            <li class="active">Agent AI POC</li>
+                            <li class="active">Python and Angular</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </header>
-      </div>
-      <div class="child profilephoto">
-        <picture>
-          <source srcset="steve3.webp" type="image/webp">
-          <source srcset="steve3.png" type="image/png"><img src="steve3.png" alt="Steve" width="150">
-        </picture>
-        <button class="dark-mode-btn" type="button" name="dark_light" onclick="toggleDarkLight()"
-          title="Toggle dark/light mode">🌛</button>
-      </div>
-    </div>
-    <section class="section main-summary">
-        I completed my Higher Diploma in Software Engineering and earned my Computing
-        degree (with Honours) from the University of Staffordshire. Over the past five years, I have gained extensive
-        experience in modern software development with C#.NET and Azure, including roles at multinational companies
-        (MNCs). I have supported the eSPICK system for the central bank (Bank Negara) and worked with commercial and
-        investment banks. Currently, as a Senior Software Engineer at Arvato, I focus on writing clean, maintainable, and
-        testable code. I enjoy exploring modern technologies, and recently, I have been exploring GenAI / MLOps.
-    </section>
-    <section class="section sectionSkill">
-      <header>
-        <h2 class="section-title">Skills / Technologies and Knowledge</h2>
-      </header>
-      <section></section>
-      <div class="accordion acc-single-open" id="skills">
-        <div class="item">
-          <div class="acc-container"></div>
-          <div class="acc-title">Server-Side (Back-End)</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">C#<i class="fa fa-info-circle tool"
-                  title="OOP, Enum, Namespaces, Exception handling, Stream I/O, File, FileInfo, Delegates, Events, Func, Action, Predicate, Extension Method, Collections, Generics, Anonymous Methods, Object Initializer, XMLSerializer, XDocument, StringBuilder, TextReader, SteamReader, FileStream, DirectoryInfo, TPL, Lock, DeadLock, Data Parallelism, Task, Async Await"></i>(ASP.NET
-                Core and .NET 6 / 8)</li>
-              <li class="active"><a href="http://apiclient2.findingsteve.net/">C# Web API 2</a><i
-                  class="fa fa-info-circle tool"
-                  title="Create and Consume Web Api with Javascript, JQuery, MVC and Console, Ocelot, token authentication, custom API method parameter, API routing, Cross-origin resource sharing (CORS) "></i>
-              </li>
-              <li class="active"><a href="http://sapi.findingsteve.net/">ASP.NET Identity</a><i
-                  class="fa fa-info-circle tool"
-                  title="register, login, role, authorize attribute, token, bearer. MVC / Razor Pages / Web Api"></i>
-              </li>
-              <li class="active"><a href="https://youtu.be/8v-RF1-OfyU">LINQ</a><i class="fa fa-info-circle tool"
-                  title="LINQ Query and LINQ Method Syntax. LINQ-To-Objects. Linq-To-Entity (EF)."></i></li>
-              <li class="active">FluentValidation<i class="fa fa-info-circle tool"
-                  title="FluentValidation, FluentValidation.WebApi, FluentValidation.AspNetCore"></i></li>
-              <li class="inactive"><a
-                  href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7T3BA9eSEF4ullWkIF9iNuS">Identity Server
-                  4</a><i class="fa fa-info-circle tool" title="Basic"></i></li>
-              <li class="active">Automapper<i class="fa fa-info-circle tool" title="Basic"></i></li>
-              <li class="active"><a href="https://youtu.be/JyaLjBbBmuA">NUnit</a>,<a
-                  href="https://github.com/ngaisteve1/xunit.sample">XUnit</a><i class="fa fa-info-circle tool"
-                  title="Automated Unit Testing (C# Console), xUnit basic: Fact, Theory, Inline, MOQ"></i></li>
-              <li class="active">Logging<i class="fa fa-info-circle tool"
-                  title="Serilog and Seq, Log4Net, NLog.Extensions.Logging"></i>,<a
-                  href="https://youtu.be/iQDoL94IRuc">Serilog and Seq</a></li>
-              <li class="active"><a href="https://youtu.be/zQ_pJCUEM5k">Swagger / SwashBuckle</a><i
-                  class="fa fa-info-circle tool" title="Basic setup"></i></li>
-              <li class="active"><a href="https://www.hangfire.io/">HangFire</a></li>
-              <li class="active"><a href="https://youtu.be/jZ_9ECuOhmU">Health Checks</a></li>
-              <li class="inactive">Yarn<i class="fa fa-info-circle tool" title="yarn add, yarn serve, yarn build"></i>
-              </li>
-              <li class="active"><a href="https://youtu.be/xMtQOJUs_TI">NPM</a><i class="fa fa-info-circle tool"
-                  title="Download, Install And Use Package Using NPM"></i></li>
-              <li class="active"><a href="https://youtu.be/fSW18n8jH28">Node.js</a><i class="fa fa-info-circle tool"
-                  title="Set Up Node.JS and Hello World, Create And Include Your Own Node.JS Modules, Read directory, files and file content"></i>
-              </li>
-              <li class="inactive"><a href="https://youtu.be/fSW18n8jH28">Ruby on Rails</a><i
-                  class="fa fa-info-circle tool"
-                  title="Set Up Ruby on Rails in Window and Ubuntu, Run default todo app, CRUD with Sqlite, MVC, routing"></i>
-              </li>
-              <li class="inactive">VB.NET (Web Forms)<i class="fa fa-info-circle tool"
-                  title="Stop practicing for long time"></i></li>
-              <li class="inactive">Classic ASP<i class="fa fa-info-circle tool"
-                  title="Stop practicing for long time"></i></li>
-              <li class="inactive">Java<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i></li>
-            </ul>
-          </div>
-        </div>
-        <div class="item skill-alternate">
-          <div class="acc-container"></div>
-          <div class="acc-title">Data and Tools (Back-End)</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">RDBMS Database Design and SQL<i class="fa fa-info-circle tool"
-                  title="Primary key, Foreign key, Composite key, Normalization, One-To-Many relationship, inner join, left join, right join"></i>
-              </li>
-              <li class="active">Entity Framework Core (ORM)<i class="fa fa-info-circle tool"
-                  title="EF 6 / EF Core 2. Code Convention and Fluent API. Model configuration with code convention or fluent API. Model validation with data annotation or Fluent Validation. EF migration. Table per Hierarchy (TPH) Inheritence pattern. Database-First (edmx) and Code-First approach. Data Context. POCO entities. Property Navigation. Enum property. Entity State. HasData seeding (EF Core)."></i>
-              </li>
-              <li class="active">ADO.NET<i class="fa fa-info-circle tool"
-                  title="Data Adapter, Command, Data Reader, Connection"></i></li>
-              <li class="active">JSON</li>
-              <li class="active">XML</li>
-              <li class="active">Datawarehouse / DataLake</li>
-              <li class="active">SQL Server<i class="fa fa-info-circle tool" title="2019"></i></li>
-              <li class="active">Stored Procedure</li>
-              <li class="active">SQL Management Studio<i class="fa fa-info-circle tool" title="18.5.1"></i></li>
-              <li class="active">PostgreSQL<i class="fa fa-info-circle tool" title="13"></i></li>
-              <li class="inactive">MySQL<i class="fa fa-info-circle tool" title="Stop using for long time"></i></li>
-              <li class="inactive">PHPMyAdmin<i class="fa fa-info-circle tool" title="Stop using for long time"></i>
-              </li>
-              <li class="inactive">Db2<i class="fa fa-info-circle tool" title="Stop using for long time"></i></li>
-              <li class="active">pgAdmin<i class="fa fa-info-circle tool" title="4 v4.26"></i></li>
-              <li class="inactive">DBeaver<i class="fa fa-info-circle tool" title="7.3.2"></i></li>
-              <li class="active">SQLite</li>
-              <li class="active">NoSql<i class="fa fa-info-circle tool" title="Elastic Search and MongoDb"></i></li>
-              <li class="active">MongoDb<i class="fa fa-info-circle tool"
-                  title="installation mongodb server in Window and via NPM, start mongodb server, show dbs, use [db], show collections, db.[collection].find().pretty(), db.dropDatabase(), db.[collection].drop(), parse XML to MongoDb with nodejs, MongoDB Compass, Studio 3T, MongoDB Atlas"></i>
-              </li>
-              <li class="active"><a
-                  href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7Q-LptF9pKRC2loy-_qCbE0"></a>Elasticsearch and
-                Kibana<i class="fa fa-info-circle tool"
-                  title="ElasticSearch 7.9: Install ElasticSearch, Elastic Cloud, ElasticSearch Head Chrome Extension, Kibana Console, Indexing, Analyzed, Query Match, Query Match_Phrase, Query Multi_Match, Query Query_String, Query Fuzzy, Query Bool, Query WildCard, Query Range, Sort, Query Term, Query Regex, Query URI Search (simple query string) and curl, Debugging. NEST 7.5.1: Setup, Search Query, IndexManyAsync, IndexDocumentAsync, ReIndex."></i>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="item">
-          <div class="acc-container"></div>
-          <div class="acc-title">Client-side (Front-End)</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active"><a href="http://js.findingsteve.net/">Javascript</a><i class="fa fa-info-circle tool"
-                  title="list object array, object, Array.prototype, push, string interpolation, let and const (ES6), arrow function (ES6), classic switch case closest, remove, filter, find, findIndex, splice, slice, conditional (ternary) operator, JSON.stringify, toFixed, addEventListener, getElementsByClassName, firstChild, nextSibling, lastChild, removeChild(), classic for loop, for ... in, forEach (ES5), while loop, reduce, Math.random(), Math.floor(), includes, window.setTimeout, fetch API, Promise, async, await, eval, charAt, join, regex, Chart.js, datatables.js, parsley.js,fullCalendar.js, moment.js"></i>
-              </li>
-              <li class="active"><a
-                  href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7SNdT5LZhEakJrQILfTpUOO">Vue.js</a><i
-                  class="fa fa-info-circle tool"
-                  title="setup, install Vue and create Vue project using NPM and CLI, Template Syntax, “Mustache” syntax, Vue instance, el and data propertyOne-way Binding, Two-way Binding (v-model), Computed Properties, List Rendering (v-for, v-if), Methods and Event Handling, Using Axios to Consume APIs (Read, Add, Delete), Vue Cli, Life Cycle Hook, $Ref, Emit Events, Pass Props, Slot, Mixin, Vuex, Dev Tools, Router, with EsLint + Prettier, Font Awesome, Component, Vue Bootstrap "></i>
-              </li>
-              <li class="active">DevExtreme / DevExpress</li>
-              <li class="active"><a href="https://youtu.be/7yBUpkoFZQc">Jest</a><i class="fa fa-info-circle tool"
-                  title="Javascript Testing Framework"></i></li>
-              <li class="active"><a
-                  href="https://www.youtube.com/watch?v=jy-adxX9Hxs&amp;list=PLIh_aKrRpW7SH03ZCMndLnKYvPIah-hYE">JQuery</a><i
-                  class="fa fa-info-circle tool"
-                  title=".ajax, .each, clone, append, show, hide, addClass, removeClass, closest"></i></li>
-              <li class="active"><a
-                  href="https://www.youtube.com/playlist?list=PLIh_aKrRpW7QyDEbkPCr_Pomkr89Xw_E1">Blazor</a><i
-                  class="fa fa-info-circle tool"
-                  title="Blazor Server. Blazor Web Assembly. Component. Component Parameter. Dependency Injection. Layout. Invoke C# from Javascript. Cascading Parameter. Page Directive. App.razor. Navigation Manager. NavLinks. Forms and Data Annotation validation. CRUD via Web Api. "></i>
-              </li>
-              <li class="active"><a
-                  href="https://www.youtube.com/watch?v=pR8xXwHQIXo&amp;list=PLIh_aKrRpW7Rz0Q3DoBO96rD1TKv6Ho_Q">Ajax</a><i
-                  class="fa fa-info-circle tool" title="consume Web Api"></i></li>
-              <li class="inactive">CSS 3<i class="fa fa-info-circle tool" title="flexbox, grid layout"></i></li>
-              <li class="inactive"><a href="http://css.findingsteve.net/">Bootstrap 5</a><i
-                  class="fa fa-info-circle tool" title="Basic, Implement AdminLte template"></i></li>
-              <li class="inactive"><a href="http://learntodesignwebsite.findingsteve.net/">HTML 5</a></li>
-              <li class="active">Pug<i class="fa fa-info-circle tool"
-                  title="Basic, mixin, loop, while, includes, extends, block"></i></li>
-              <li class="active"><a href="https://youtu.be/iqUiPdNhwPE">Sass / Scss</a><i class="fa fa-info-circle tool"
-                  title="Basic"></i></li>
-              <li class="inactive">Gulps 4<i class="fa fa-info-circle tool"
-                  title="series, parallel, delete files, compile Pug, compile scss, minify image"></i></li>
-              <li class="inactive">Typescript<i class="fa fa-info-circle tool" title="Basic"></i></li>
-              <li class="inactive"><a href="https://youtu.be/g0id1KSdhl0">Babel</a><i class="fa fa-info-circle tool"
-                  title="Basic"></i></li>
-              <li class="inactive"><a
-                  href="https://www.youtube.com/watch?v=SOZtAvyEOC4&amp;list=PLIh_aKrRpW7QcIfi10uuNA360-lQa5Qmu">React.js</a><i
-                  class="fa fa-info-circle tool" title="Basic"></i></li>
-              <li class="inactive">Linters and Formatters (Prettier, ESLint, Beautify)</li>
-              <li class="active">C# MVC (.NET Framework)<i class="fa fa-info-circle tool"
-                  title="routing, controller, action method, action selectors, action verbs, model, view, model binding, razor, help helpers, data annotation validation, layout, viewbag, tempdata, exception filters, publish and deploy to IIS"></i>
-              </li>
-              <li class="inactive">C# Xamarin, XAML<i class="fa fa-info-circle tool"
-                  title="Layout, ListView, Navigation, CRUD with SQLite, Camera, Consume Web Api"></i></li>
-              <li class="inactive">C# WPF<i class="fa fa-info-circle tool" title="Basic"></i></li>
-              <li class="active">C# (ASP.NET Core)&nbsp;<a href="http://m.findingsteve.net/">Razor&nbsp;</a><a
-                  href="http://demo.findingsteve.net/">Pages</a><i class="fa fa-info-circle tool"
-                  title=".NET Core 3.1, ASP.NET Core, built-in DI/iOC, Middlewares, Setup MVC / Web Api / Razor, Action Result, Views, Layout, Tag Helpers, Publish in IIS and Azure, Global exception filter and logging"></i>
-              </li>
-              <li class="inactive"><a href="https://www.youtube.com/watch?v=5nib-KLRH4s">Android app with Java</a><i
-                  class="fa fa-info-circle tool" title="Stop practicing for long time"></i></li>
-            </ul>
-          </div>
-        </div>
-        <div class="item skill-alternate">
-          <div class="acc-container"></div>
-          <div class="acc-title">Generative AI</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">Google Colab</li>
-              <li class="active">Python</li>
-              <li class="active">Machine Learning Basics</li>
-              <li class="active">Azure Machine Learning</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item">
-          <div class="acc-container"></div>
-          <div class="acc-title">Cloud (PaaS)</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Static Web App</a></li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Azure App Service</a></li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Container Apps</a></li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure SQL Server</a></li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Resource Manager (ARM)</a>
-              </li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Functions</a></li>
-              <li class="active">Azure Container Registry (ACR)</li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Monitor / App Insights</a>
-              </li>
-              <li class="active">Azure Active Directory (AD)<i class="fa fa-info-circle tool"
-                  title="App registration"></i></li>
-              <li class="active">Azure Kubernetes Service (AKS)</li>
-              <li class="active"><a href="https://ngaisteve1.github.io/learnazure/">Azure Service Bus</a>
-              <li class="inactive">Azure (<a href="https://youtu.be/MWUqY9Id5J8">Deploy RESTful C# Web App</a>)</li>
-              <li class="active">Google Colab</li>
-              <li class="inactive">Digital Ocean</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item skill-alternate">
-          <div class="acc-container"></div>
-          <div class="acc-title">DevOps and Others</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active"><a href="https://youtu.be/DxeONf8Ugio">Docker</a><i class="fa fa-info-circle tool"
-                  title="Add docker file, Build and Remove Image, Remove, stop and start Container, Docker run, Window Subsystem for Linux (WSL) 2, Docker Desktop, DockerHub, DockerCompose"></i>
-              </li>
-              <li class="active">ChatGPT</li>
-              <li class="active">GitHub CoPilot</li>
-              <li class="active"><a href="https://github.com/ngaisteve1?tab=repositories"> GIT / GitHub / GitLab</a><i
-                  class="fa fa-info-circle tool"
-                  title="init, clone, pull, push, commit, add, sync, status, branch, checkout, merge, clean, add/remove branch, GitHub Actions Workflow, fork, checkout, merge request"></i>
-              </li>
-              <li class="active">Azure DevOps CI/CD</li>
-              <li class="active">Microsoft Forms</li>
-              <li class="active">Microsoft Graphs</li>
-              <li class="active">Power Automate</li>
-              <li class="active">Portainer<i class="fa fa-info-circle tool"
-                  title="setup community edition, deploy container from DockerHub"></i></li>
-              <li class="active">TDD / BDD (Specflow)</li>
-              <li class="active">Agile / Scrum / Kanban</li>
-              <li class="inactive">CMMI<i class="fa fa-info-circle tool"
-                  title="Level 3. Stop practicing for long time"></i></li>
-              <li class="inactive">SDLC</li>
-              <li class="inactive">Trello<i class="fa fa-info-circle tool"
-                  title="Create team, create board, create card, label, filtering, calendar, checklist, copy/move card, copy/move card, change background, attach card, cover photo, due date"></i>
-              </li>
-              <li class="inactive">SVN<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i></li>
-              <li class="inactive">Heroku<i class="fa fa-info-circle tool" title="Stop practicing for long time"></i>
-              </li>
-              <li class="inactive"><a href="https://findingsteve.netlify.app/">Netlify</a><i
-                  class="fa fa-info-circle tool" title="netlify deploy"></i></li>
-              <li class="inactive"><a href="https://youtu.be/-VOs1sGNYHg">Travis</a><i class="fa fa-info-circle tool"
-                  title="Stop practicing for long time"></i></li>
-              <li class="inactive">IIS (<a href="https://youtu.be/LWWNNLnLCto">Publish Using Folder</a>)</li>
-              <li class="inactive">Nginx</li>
-              <li class="inactive">Prometheus<i class="fa fa-info-circle tool"
-                  title="Basic setup and configuration"></i></li>
-              <li class="inactive">Zookeeper<i class="fa fa-info-circle tool"
-                  title="Installation, Start ZooKeeper server, Start CLI, Stop ZooKeeper Server"></i></li>
-              <li class="inactive">Kafka<i class="fa fa-info-circle tool" title="Installation"></i></li>
-              <li class="inactive">RabbitMQ<i class="fa fa-info-circle tool"
-                  title="Install RabbitMQ Server locally, send and receive message"></i></li>
-              <li class="inactive">ActiveMQ &amp; NMS Api<i class="fa fa-info-circle tool"
-                  title="Install ActiveMQ locally, NMS Api send and receive message"></i></li>
-              <li class="active">SonarQube</li>
-              <li class="active"><a href="https://mermaid-js.github.io/mermaid/#/">mermaidJs</a> and <a
-                  href="https://markmap.js.org/">MarkMap</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="item">
-          <div class="acc-container"></div>
-          <div class="acc-title">Design Principles / Design Pattern / Software Architecture</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">REST and SOAP</li>
-              <li class="active"><a
-                  href="https://www.youtube.com/watch?v=uG0A7jxPHJo&amp;list=PLIh_aKrRpW7TRA8snCbj2wkfY6nSO_Pm2"></a>Layered
-                Architecture<i class="fa fa-info-circle tool"
-                  title="Core/Application/Business, Infrastructure layer (ORM), Web layer (Web API and UI)"></i></li>
-              <li class="active">Monolithic Architecture</li>
-              <li class="active">Microservices Architecture<i class="fa fa-info-circle tool"
-                  title="API Gateway, CQRS Architectural Pattern, Docker"></i></li>
-              <li class="active">Clean Architecture<i class="fa fa-info-circle tool"
-                  title="Exploring Clean Architecture template from Jason Taylor and Steve Smith (Ardalis)"></i></li>
-              <li class="inactive">Domain Driven Design<i class="fa fa-info-circle tool" title="Value Object"></i></li>
-              <li class="active">DRY</li>
-              <li class="active">KISS</li>
-              <li class="active">SOC</li>
-              <li class="active">SOLID</li>
-              <li class="active">YAGNI</li>
-              <li class="inactive">Repository pattern<i class="fa fa-info-circle tool"
-                  title="Non-Generic and Generic Repository pattern"></i></li>
-              <li class="active">Data-centric architecture</li>
-              <li class="active">OO Design Pattern<i class="fa fa-info-circle tool"
-                  title="basic Builder, Factory method, Singleton, Observer, Strategy, Command, Adapter"></i></li>
-              <li class="inactive"><a href="http://mvc.findingsteve.net/">M</a>VC and MVVM</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item skill-alternate">
-          <div class="acc-container"></div>
-          <div class="acc-title">Domain knowledge</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">Media and Broadcasting</li>
-              <li class="active">Technology</li>
-              <li class="active">Investment banking</li>
-              <li class="active">Property (Real Estate)</li>
-              <li class="inactive">Manufacturing</li>
-              <li class="inactive">Payment</li>
-            </ul>
-          </div>
-        </div>
-        <div class="item">
-          <div class="acc-container"></div>
-          <div class="acc-title">Learning Goals 2024 / 2025</div>
-          <div class="acc-content">
-            <ul class="keywords">
-              <li class="active">Setup CI/CD for eShop</li>
-              <li class="active">Software architecture</li>
-              <li class="active">Agent AI POC</li>
-              <li class="active">Python and Angular</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="experience">
-      <header>
-        <h2 class="section-title">Work Experience <span class="item-count">(17 years)</span></h2>
-      </header>
-      <ul class="highlights">
-        <li><strong>Software design and development:</strong> 5 years</li>
-        <li><strong>Application support (Level 2 & 3):</strong> 5 years</li>
-        <li><strong>Software Engineering Instructor: 5 years:</strong> 5 years</li>
-        <li><strong>Management:</strong> 2 years</li>
-      </ul>
-      <p></p>
-      <div class="accordion acc-single-open">
-        <div class="acc-container recent-employment">
-          <div class="acc-title">Microsoft .NET Developer (Senior-Level) | <strong>Arvato Systems Malaysia
-              (MNC)</strong> | Nov2023 - now</div>
-          <div class="acc-content">
-              <p>
-                  <a href="https://www.arvato-systems.com/">Arvato Systems Malaysia</a> is a part of Arvato Systems,
-                  providing IT solutions and services to support
-                  digital transformation, focusing on industries like media, retail, utilities, and healthcare.
-              </p>
-
-              <p>
-                  <h4>Key Responsibilities</h4>
-                  <ul>
-                      <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
-                      <li><strong>Testing & Debugging:</strong> Write automated unit and integration tests, and fix bugs to ensure software quality.</li>
-                      <li><strong>Collaboration:</strong> Work with cross-functional teams, including designers, product owners, and QA engineers.</li>
-                      <li><strong>Documentation:</strong> Create technical documentation like database schema diagrams, sequence diagrams, flowcharts, and state diagrams for future reference and team use.</li>
-                      <li><strong>Performance Optimization:</strong> Improve the efficiency of the CI pipeline.</li>
-                      <li><strong>Process:</strong> Participate in Agile Scrum processes, including daily standups, sprint planning, backlog refinement, sprint reviews, retrospectives, and PI Planning to ensure effective collaboration, continuous improvement, and successful project delivery.</li>
-                  </ul>
-              </p>
-
-              <p>
-                  <h4>Implemented Solutions</h4>
-                  <ul>
-                      <li>
-                          <strong>POC Implementations (2024):</strong> Led two POCs:
-                          <ul>
-                              <li><strong>Azure Monitor / Application Insights</strong> for enhanced observability.</li>
-                              <li><strong>Google Ad Manager API Dev Tool</strong> to accelerate development and testing for Digital Sales.</li>
-                          </ul>
-                      </li>
-                      <li><strong>Completed POC (2025):</strong> Completed <strong>Hangfire-based centralized Job Scheduling</strong> in .NET 10.</li>
-                      <li><strong>Ongoing POC (2025):</strong> Developing <strong>AI Model Monitoring & Automated Retraining</strong> for Google Ad Click Prediction.</li>
-                      <li><strong>Repository Optimization:</strong> Reduced repository size by <strong>24%</strong> by cleaning up the package folder.</li>
-                      <li><strong>Critical Blocker Resolution:</strong> Enabled <strong>line item status transitions</strong>, eliminating the need for costly external consultancy.</li>
-                      <li><strong>CI/CD Optimization:</strong> Implemented a <strong>file-based test-skipping mechanism</strong>, reducing CI pipeline time by <strong>66%</strong>.</li>
-                  </ul>
-              </p>
-
-              <p>
-                  <h4>Extra Initiative</h4>
-                  <ul>
-                      <li><strong>AI Hackathon Participation:</strong> Competed in <strong>Arvato Systems Malaysia: AI Hackathon 2024</strong>, collaborating on an AI POC for support ticket management using Python, Google Colab, and JIRA API integration.</li>
-                      <li><strong>Team Engagement:</strong> Volunteered to organize a team-building event for the BMS team during counterpart visits to Kuala Lumpur.</li>
-                      <li>
-                          <strong>Knowledge Sharing:</strong> Regularly bring out topics for cross-team alignment for improvement. Engaged in discussions on improving code quality with counterparts, introducing:
-                          <ul>
-                              <li><strong>Strategy & Factory Method patterns</strong> for better maintainability.</li>
-                              <li><strong>Pure unit testing</strong> as a new approach.</li>
-                          </ul>
-                      </li>
-                  </ul>
-              </p>
-
-              <p>
-                  <h4><mark>Accomplishments</mark></h4>
-                  <ul>
-                      <li>
-                          <strong>Performance Recognition:</strong>  Successfully passed 6-month probation with strong results and achieved a good performance review for 2024.
-                      </li>
-                  </ul>
-              </p>
-
-              <p>
-                  <h4>Technology Stack</h4>
-                  <ul>
-                      <li><strong>Languages & Frameworks:</strong> C#, .NET Framework 4.8, .NET 8, Web API</li>
-                      <li><strong>Backend Tools:</strong> Swagger (Swashbuckle), Hangfire, Serilog, Seq</li>
-                      <li><strong>Databases:</strong> SQL Server, Entity Framework Core 8</li>
-                      <li><strong>Cloud & DevOps:</strong> Azure Container Registry, Azure DevOps, Docker</li>
-                      <li><strong>Monitoring & Testing:</strong> Azure Application Insights, NUnit (Unit Test, Integration Test)</li>
-                      <li><strong>Frontend:</strong> JavaScript</li>
-                      <li>
-                          <strong>Design Patterns & Principles:</strong> Monolith, Factory Pattern, Strategy Pattern,
-                          Query Object Pattern, Repository Pattern, DRY, YAGNI, SOC, OOP, Dependency Injection (DI), MVC
-                      </li>
-                      <li><strong>Others:</strong> Scrum, Agile, Confluence, MermaidJS, SonarQube / SonarCloud, Google Colab, Python</li>
-                  </ul>
-              </p>
-          </div>
-        </div>
-        <div class="acc-container recent-employment">
-          <div class="acc-title highlight">POCs and Experiments | Aug2020 - now</div>
-          <div class="acc-content">
+        </section>
+        <section class="section" id="experience">
+            <header>
+                <h2 class="section-title">Work Experience <span class="item-count">(17 years)</span></h2> <span class="help-icon" onclick="showTooltip(event)">ℹ️</span>
+            </header>
             <ul class="highlights">
-              <li>Jan 2025: Developed a POC using Python and Retrieval-Augmented Generation (RAG)
-                with a Pinecone-based assistant integrated with LLM GPT-4. Enabled natural language querying of PDF
-                documents, including ebooks and HR policies, with responses strictly derived from uploaded content. | <a
-                  href="https://www.youtube.com/watch?v=HIee-2VZVdI">Demo</a>.
-              <li>Jan 2025: <a href="https://github.com/ngaisteve1/huggingface_demo">Developed a POC using the BART
-                  transformer model with Hugging Face to summarize PDF text. Integrated PyMuPDF for extraction,
-                  Streamlit for an interactive UI, and optimized text processing to address encoding challenges</a> | <a
-                  href="https://youtu.be/mMV2Q6oaNlU">Demo</a>.
-              </li>
-              <li>Oct 2024: <a href="https://ngaisteve1.github.io/learnazure/">Developed a POC which highlights the
-                  asynchronous nature of order handling and the integration of Azure Service Bus for messaging using
-                  Azure Function App</a>.
-              </li>
-              <li>Jun-July 2024: <a href="https://ngaisteve1.github.io/learnazure/">Deployed an eShop using .NET Aspire
-                  to both local and Azure environments. Utilized Azure Developer CLI (azd) to provision 15 Container
-                  Apps within 11 minutes</a>.
-              </li>
-              <li>May 2024: <a href="https://ngaisteve1.github.io/learnazure/">Deployed a minimal starter pipeline in
-                  Azure DevOps to build, test, and deploy an ASP.NET Core project, utilizing stages for artifact
-                  download and deployment to an Azure Web App.</a></li>
-              <li>July-Aug 2023: Built a <a href="https://dagster.io/">Dagster</a> ETL data pipeline in Python,
-                scheduled to run hourly.
-                <a href="https://youtu.be/ajQyeECOJf4">Fetched data from Hacker News API and generated CSV</a>, and
-                <a href="https://github.com/ngaisteve1/dagster-demo2">read data from SQL Server</a>.
-              </li>
-              <li>June 2023: Configured <a
-                  href="https://github.com/ngaisteve1/eShopOnContainers/actions">eShopOnContainers</a> with Azure
-                Kubernetes Service (AKS) for CI/CD using GitLab Actions.
-                Integrated Azure Active Directory for authentication.
-              </li>
-              <li>June 2023: Deployed .NET 7 <a
-                  href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Local-Kubernetes">eShopOnContainers
-                  to Local Kubernetes</a> using Docker Desktop and Helm.</li>
-              <li>May 2023: Built <a href="https://github.com/ngaisteve1/Sloopee">a mock eCommerce microservices
-                  solution</a> using GraphQL, Azure Functions, and Azure Service Bus.</li>
-              <li>May 2023: Developed <a href="https://github.com/ngaisteve1/AzureFunctionsDemo">Azure Functions demo
-                  projects</a> (Blazor Server + Web API). Integrated Azure AppInsights for monitoring.</li>
-              <li>Mar 2023: Optimized <a href="https://gtmetrix.com/reports/resume.findingsteve.net/rLm5UjVC/">online
-                  resume</a> for 100/100 GTmetrix performance and 90/100 in Pingdom.</li>
-              <li>Mar 2023: Deployed a <a href="https://ngaisteve1.github.io/">Jekyll-based website</a> with <a
-                  href="https://github.com/ngaisteve1/ngaisteve1.github.io/actions">GitHub Actions CI/CD</a>.</li>
-              <li>Feb 2023: Built a <a href="https://github.com/ngaisteve1/blockchainether">mock Ethereum blockchain Web
-                  API</a> using .NET 7 and EF Core in 3-4 days.</li>
-              <li>Nov 2022: Automated code reviews in Azure DevOps CI pipeline with SonarQube and SonarCloud.</li>
-              <li>Aug 2022: Deployed <a href="https://ngaisteve1.github.io/learnazure/">.NET 6 Web API to Azure</a>
-                using GitHub Actions (CI/CD).</li>
-              <li>July 2022: Implemented and monitored automated tests in Azure DevOps CI/CD pipeline.</li>
-              <li>May 2022: Deployed Task Tracker API in .NET 6 and refactored Task Tracker React app for API
-                consumption.</li>
-              <li>Oct 2021: Integrated SpecFlow + Living Doc in .NET 6.</li>
-              <li>July 2021: <a href="https://github.com/ngaisteve1/DataStructureDemo">Implemented SonarCloud (Code
-                  Analysis) with GitHub Actions</a>.
-              </li>
-              <li>Jun 2021: Migrated <a href="http://resume.findingsteve.net/">online resume</a> to Pug + SCSS, reducing
-                file size by 40% and improving maintainability.</li>
-              <li>Apr 2021: Parsed <strong>1,000 complex XML files</strong> into Elasticsearch using NEST C# in
-                <strong>15 minutes</strong> with advanced search options.
-              </li>
-              <li>Feb 2021: Completed <a href="https://github.com/ngaisteve1/ThaiPayment">take-home technical
-                  assignment</a> in 24 hours (given 48 hours). Built a .NET Core Web API service to <strong>upload,
-                  parse, and query transactions</strong> from XML & CSV.</li>
-              <li>Jan 2021:
-                <a href="https://github.com/ngaisteve1/xml2js_mongodb">Parsed 800 XML files (500MB) into MongoDB using
-                  Node.js in 1 minute</a>.
-                Parsed 1,800 XML files (4.7GB) into MongoDB using C# in 9 minutes.
-                Ingested XML files into Elasticsearch using <a
-                  href="https://github.com/ngaisteve1/JSXmlIngestion">Node.js</a> &
-                <a href="https://github.com/ngaisteve1/PyXmlIngestion">Python</a>.
-              </li>
-              <li>Nov-Dec 2020: <a href="http://jwt.findingsteve.net/">Built a JWT-based CRUD web app</a> (Back-end:
-                .NET Core 3.1, Front-end: Vanilla JS).</li>
+                <li><strong>Software design and development:</strong> 5 years</li>
+                <li><strong>Application support (Level 2 & 3):</strong> 5 years</li>
+                <li><strong>Software Engineering Instructor: 5 years:</strong> 5 years</li>
+                <li><strong>Management:</strong> 2 years</li>
             </ul>
-          </div>
-        </div>
-        <div class="acc-container recent-employment">
-          <div class="acc-title">
-            Microsoft .NET Developer (Senior-Level) | <strong>Quantum Storage Malaysia (MNC)</strong> | Aug2022 - Nov2023
-          </div>
-          <div class="acc-content">
-              <p>
-                  Quantum Corporation sells scale-out storage, archive, and data protection solutions for capturing,
-                  sharing, and preserving digital assets in physical and virtual environments.
-              </p>
+            <p></p>
+            <div class="accordion acc-single-open">
+                <div class="acc-container recent-employment">
+                    <div class="acc-title">
+                        Microsoft .NET Developer (Senior-Level) | 
+                            Arvato Systems Malaysia
+                            (MNC)
+                         | Nov2023 - now
+                    </div>
+                    <div class="acc-content">
+                        <p>
+                            <a href="https://www.arvato-systems.com/">Arvato Systems Malaysia</a> is a part of Arvato Systems,
+                            providing IT solutions and services to support
+                            digital transformation, focusing on industries like media, retail, utilities, and healthcare.
+                        </p>
 
-              <p>
-                  <h4>Key Responsibilities</h4>
-                  <ul>
-                      <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
-                      <li><strong>Testing & Debugging:</strong> Write automated unit and integration tests, and fix bugs to ensure software quality.</li>
-                      <li><strong>Collaboration:</strong> Work with cross-functional teams, including designers, product owners, and QA engineers.</li>
-                      <li><strong>Documentation:</strong> Create technical documentation like database schema diagrams, sequence diagrams, and flowcharts for future reference.</li>
-                      <li><strong>Performance Optimization:</strong> Improve the efficiency of applications.</li>
-                      <li><strong>Automation:</strong> Automate manual processes by implementing generic background microservices.</li>
-                      <li><strong>Data Migration:</strong> Perform ETL data migration to ensure seamless data transfer across systems.</li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
+                                <li><strong>Testing & Debugging:</strong> Write automated unit and integration tests, and fix bugs to ensure software quality.</li>
+                                <li><strong>Collaboration:</strong> Work with cross-functional teams, including designers, product owners, and QA engineers.</li>
+                                <li><strong>Documentation:</strong> Create technical documentation like database schema diagrams, sequence diagrams, flowcharts, and state diagrams for future reference and team use.</li>
+                                <li><strong>Performance Optimization:</strong> Improve the efficiency of the CI pipeline.</li>
+                                <li><strong>Process:</strong> Participate in Agile Scrum processes, including daily standups, sprint planning, backlog refinement, sprint reviews, retrospectives, and PI Planning to ensure effective collaboration, continuous improvement, and successful project delivery.</li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Implemented Solutions</h4>
-                  <ul>
-                      <li>
-                          <strong>Automated Fulfillment:</strong> Developed a background microservice to reduce manual
-                          processing.
-                      </li>
-                      <li><strong>IT Asset Management:</strong> Built a CMDB system for better IT asset tracking.</li>
-                      <li>
-                          <strong>Automated Testing:</strong> Introduced and implemented automated unit and integration tests.
-                      </li>
-                      <li>
-                          <strong>ETL Migration:</strong> Developed a .NET 6 ETL service to migrate data from MS Dataverse to SQL
-                          Server,
-                          cutting Azure costs by <strong>~$3,000/month</strong>.
-                      </li>
-                      <li>
-                          <strong>Performance Optimization:</strong> Upgraded ETL migration (40M records) from .NET 6 to .NET 8,
-                          achieving:
-                          <ul>
-                              <li><strong>16% faster</strong> bulk operations (7.3M records)</li>
-                              <li><strong>30% faster</strong> smaller transactions (630K records)</li>
-                          </ul>
-                      </li>
-                      <li>
-                          <strong>Process Automation:</strong> Built a static HTML email utility and Power Automate workflows to
-                          streamline internal tasks.
-                      </li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Implemented Solutions</h4>
+                            <ul>
+                                <li>
+                                    <strong>POC Implementations (2024):</strong> Led two POCs:
+                                    <ul>
+                                        <li><strong>Azure Monitor / Application Insights</strong> for enhanced observability.</li>
+                                        <li><strong>Google Ad Manager API Dev Tool</strong> to accelerate development and testing for Digital Sales.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Completed POC (2025):</strong> Completed <strong>Hangfire-based centralized Job Scheduling</strong> in .NET 10.</li>
+                                <li><strong>Ongoing POC (2025):</strong> Developing <strong>AI Model Monitoring & Automated Retraining</strong> for Google Ad Click Prediction.</li>
+                                <li><strong>Repository Optimization:</strong> Reduced repository size by <strong>24%</strong> by cleaning up the package folder.</li>
+                                <li><strong>Critical Blocker Resolution:</strong> Enabled <strong>line item status transitions</strong>, eliminating the need for costly external consultancy.</li>
+                                <li><strong>CI/CD Optimization:</strong> Implemented a <strong>file-based test-skipping mechanism</strong>, reducing CI pipeline time by <strong>66%</strong>.</li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Extra Initiative</h4>
-                  <ul>
-                      <li>
-                          <strong>Tech Exploration:</strong> Researched SonarQube (code quality) and Dagster (data
-                          orchestration) for future improvements.
-                      </li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Extra Initiative</h4>
+                            <ul>
+                                <li><strong>AI Hackathon Participation:</strong> Competed in <strong>Arvato Systems Malaysia: AI Hackathon 2024</strong>, collaborating on an AI POC for support ticket management using Python, Google Colab, and JIRA API integration.</li>
+                                <li><strong>Team Engagement:</strong> Volunteered to organize a team-building event for the BMS team during counterpart visits to Kuala Lumpur.</li>
+                                <li>
+                                    <strong>Knowledge Sharing:</strong> Regularly bring out topics for cross-team alignment for improvement. Engaged in discussions on improving code quality with counterparts, introducing:
+                                    <ul>
+                                        <li><strong>Strategy & Factory Method patterns</strong> for better maintainability.</li>
+                                        <li><strong>Pure unit testing</strong> as a new approach.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4><mark>Accomplishments</mark></h4>
-                  <ul>
-                      <li>
-                          <strong>Cost Reduction:</strong> Cut Azure costs by <strong>~$3,000/month</strong> through ETL
-                          optimization.
-                      </li>
-                      <li>
-                          <strong>Performance Gains:</strong> Boosted ETL efficiency by <strong>up to 30%</strong> in .NET 8
-                          with no added infrastructure cost.
-                      </li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4><mark>Accomplishments</mark></h4>
+                            <ul>
+                                <li>
+                                    <strong>Performance Recognition:</strong>  Successfully passed 6-month probation with strong results and achieved a good performance review for 2024.
+                                </li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Technology Stack</h4>
-                  <ul>
-                      <li><strong>Languages & Frameworks:</strong> C#, .NET 6, ASP.NET Razor Pages, MVVM</li>
-                      <li><strong>Backend Tools:</strong> Hangfire, Entity Framework Core</li>
-                      <li><strong>Databases:</strong> SQL Server, MS Dataverse</li>
-                      <li><strong>Monitoring & CI/CD:</strong> Azure App Insights, Health Checks, GitHub Actions</li>
-                  </ul>
-              </p>
-          </div>
-        </div>
-        <div class="acc-container recent-employment">
-          <div class="acc-title">Full-Stack Software Engineer (Mid-Level) | <strong>Affin Hwang Investment
-              Bank</strong> | Aug2020 - July2022</div>
-          <div class="acc-content">
-              <p>
-                  <a target="_blank" href="https://affinhwang.com/">AFFIN Hwang Investment Bank Berhad</a> provides
-                  financial services. The Company offers stock brokerage, asset management, treasury bonds, currency
-                  exchange, financial advisory, and investment banking services.
-              </p>
+                        <p>
+                            <h4>Technology Stack</h4>
+                            <ul>
+                                <li><strong>Languages & Frameworks:</strong> C#, .NET Framework 4.8, .NET 8, Web API</li>
+                                <li><strong>Backend Tools:</strong> Swagger (Swashbuckle), Hangfire, Serilog, Seq</li>
+                                <li><strong>Databases:</strong> SQL Server, Entity Framework Core 8</li>
+                                <li><strong>Cloud & DevOps:</strong> Azure Container Registry, Azure DevOps, Docker</li>
+                                <li><strong>Monitoring & Testing:</strong> Azure Application Insights, NUnit (Unit Test, Integration Test)</li>
+                                <li><strong>Frontend:</strong> JavaScript</li>
+                                <li>
+                                    <strong>Design Patterns & Principles:</strong> Monolith, Factory Pattern, Strategy Pattern,
+                                    Query Object Pattern, Repository Pattern, DRY, YAGNI, SOC, OOP, Dependency Injection (DI), MVC
+                                </li>
+                                <li><strong>Others:</strong> Scrum, Agile, Confluence, MermaidJS, SonarQube / SonarCloud, Google Colab, Python</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="acc-container recent-employment">
+                    <div class="acc-title highlight">POCs and Experiments | Aug2020 - now</div>
+                    <div class="acc-content">
+                        <ul class="highlights">
+                            <li>
+                                Jan 2025: Developed a POC using Python and Retrieval-Augmented Generation (RAG)
+                                with a Pinecone-based assistant integrated with LLM GPT-4. Enabled natural language querying of PDF
+                                documents, including ebooks and HR policies, with responses strictly derived from uploaded content. | <a href="https://www.youtube.com/watch?v=HIee-2VZVdI">Demo</a>.
+                            <li>
+                                Jan 2025: <a href="https://github.com/ngaisteve1/huggingface_demo">
+                                    Developed a POC using the BART
+                                    transformer model with Hugging Face to summarize PDF text. Integrated PyMuPDF for extraction,
+                                    Streamlit for an interactive UI, and optimized text processing to address encoding challenges
+                                </a> | <a href="https://youtu.be/mMV2Q6oaNlU">Demo</a>.
+                            </li>
+                            <li>
+                                Oct 2024: <a href="https://ngaisteve1.github.io/learnazure/">
+                                    Developed a POC which highlights the
+                                    asynchronous nature of order handling and the integration of Azure Service Bus for messaging using
+                                    Azure Function App
+                                </a>.
+                            </li>
+                            <li>
+                                Jun-July 2024: <a href="https://ngaisteve1.github.io/learnazure/">
+                                    Deployed an eShop using .NET Aspire
+                                    to both local and Azure environments. Utilized Azure Developer CLI (azd) to provision 15 Container
+                                    Apps within 11 minutes
+                                </a>.
+                            </li>
+                            <li>
+                                May 2024: <a href="https://ngaisteve1.github.io/learnazure/">
+                                    Deployed a minimal starter pipeline in
+                                    Azure DevOps to build, test, and deploy an ASP.NET Core project, utilizing stages for artifact
+                                    download and deployment to an Azure Web App.
+                                </a>
+                            </li>
+                            <li>
+                                July-Aug 2023: Built a <a href="https://dagster.io/">Dagster</a> ETL data pipeline in Python,
+                                scheduled to run hourly.
+                                <a href="https://youtu.be/ajQyeECOJf4">Fetched data from Hacker News API and generated CSV</a>, and
+                                <a href="https://github.com/ngaisteve1/dagster-demo2">read data from SQL Server</a>.
+                            </li>
+                            <li>
+                                June 2023: Configured <a href="https://github.com/ngaisteve1/eShopOnContainers/actions">eShopOnContainers</a> with Azure
+                                Kubernetes Service (AKS) for CI/CD using GitLab Actions.
+                                Integrated Azure Active Directory for authentication.
+                            </li>
+                            <li>
+                                June 2023: Deployed .NET 7 <a href="https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Local-Kubernetes">
+                                    eShopOnContainers
+                                    to Local Kubernetes
+                                </a> using Docker Desktop and Helm.
+                            </li>
+                            <li>
+                                May 2023: Built <a href="https://github.com/ngaisteve1/Sloopee">
+                                    a mock eCommerce microservices
+                                    solution
+                                </a> using GraphQL, Azure Functions, and Azure Service Bus.
+                            </li>
+                            <li>
+                                May 2023: Developed <a href="https://github.com/ngaisteve1/AzureFunctionsDemo">
+                                    Azure Functions demo
+                                    projects
+                                </a> (Blazor Server + Web API). Integrated Azure AppInsights for monitoring.
+                            </li>
+                            <li>
+                                Mar 2023: Optimized <a href="https://gtmetrix.com/reports/resume.findingsteve.net/rLm5UjVC/">
+                                    online
+                                    resume
+                                </a> for 100/100 GTmetrix performance and 90/100 in Pingdom.
+                            </li>
+                            <li>
+                                Mar 2023: Deployed a <a href="https://ngaisteve1.github.io/">Jekyll-based website</a> with <a href="https://github.com/ngaisteve1/ngaisteve1.github.io/actions">GitHub Actions CI/CD</a>.
+                            </li>
+                            <li>
+                                Feb 2023: Built a <a href="https://github.com/ngaisteve1/blockchainether">
+                                    mock Ethereum blockchain Web
+                                    API
+                                </a> using .NET 7 and EF Core in 3-4 days.
+                            </li>
+                            <li>Nov 2022: Automated code reviews in Azure DevOps CI pipeline with SonarQube and SonarCloud.</li>
+                            <li>
+                                Aug 2022: Deployed <a href="https://ngaisteve1.github.io/learnazure/">.NET 6 Web API to Azure</a>
+                                using GitHub Actions (CI/CD).
+                            </li>
+                            <li>July 2022: Implemented and monitored automated tests in Azure DevOps CI/CD pipeline.</li>
+                            <li>
+                                May 2022: Deployed Task Tracker API in .NET 6 and refactored Task Tracker React app for API
+                                consumption.
+                            </li>
+                            <li>Oct 2021: Integrated SpecFlow + Living Doc in .NET 6.</li>
+                            <li>
+                                July 2021: <a href="https://github.com/ngaisteve1/DataStructureDemo">
+                                    Implemented SonarCloud (Code
+                                    Analysis) with GitHub Actions
+                                </a>.
+                            </li>
+                            <li>
+                                Jun 2021: Migrated <a href="http://resume.findingsteve.net/">online resume</a> to Pug + SCSS, reducing
+                                file size by 40% and improving maintainability.
+                            </li>
+                            <li>
+                                Apr 2021: Parsed <strong>1,000 complex XML files</strong> into Elasticsearch using NEST C# in
+                                <strong>15 minutes</strong> with advanced search options.
+                            </li>
+                            <li>
+                                Feb 2021: Completed <a href="https://github.com/ngaisteve1/ThaiPayment">
+                                    take-home technical
+                                    assignment
+                                </a> in 24 hours (given 48 hours). Built a .NET Core Web API service to <strong>
+                                    upload,
+                                    parse, and query transactions
+                                </strong> from XML & CSV.
+                            </li>
+                            <li>
+                                Jan 2021:
+                                <a href="https://github.com/ngaisteve1/xml2js_mongodb">
+                                    Parsed 800 XML files (500MB) into MongoDB using
+                                    Node.js in 1 minute
+                                </a>.
+                                Parsed 1,800 XML files (4.7GB) into MongoDB using C# in 9 minutes.
+                                Ingested XML files into Elasticsearch using <a href="https://github.com/ngaisteve1/JSXmlIngestion">Node.js</a> &
+                                <a href="https://github.com/ngaisteve1/PyXmlIngestion">Python</a>.
+                            </li>
+                            <li>
+                                Nov-Dec 2020: <a href="http://jwt.findingsteve.net/">Built a JWT-based CRUD web app</a> (Back-end:
+                                .NET Core 3.1, Front-end: Vanilla JS).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acc-container recent-employment">
+                    <div class="acc-title">
+                        Microsoft .NET Developer (Senior-Level) | Quantum Storage Malaysia (MNC) | Aug2022 - Nov2023
+                    </div>
+                    <div class="acc-content">
+                        <p>
+                            Quantum Corporation sells scale-out storage, archive, and data protection solutions for capturing,
+                            sharing, and preserving digital assets in physical and virtual environments.
+                        </p>
 
-              <p>
-                  <h4>Key Responsibilities</h4>
-                  <ul>
-                      <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
-                      <li><strong>Testing & Debugging:</strong> Write automated unit tests, automated integration tests, and fix bugs to ensure software quality.</li>
-                      <li><strong>Collaboration:</strong> Work with solution architect, CTO, front-end tech lead, back-end tech leads, business analyst, UI/UX designer, data engineer, and end-users.</li>
-                      <li><strong>Documentation:</strong> Create technical documentation like database schema diagram, sequence diagram, and flowchart for future reference.</li>
-                      <li><strong>Performance Optimization:</strong> Improve the efficiency of applications or services.</li>
-                      <li><strong>Interviewing:</strong> Conduct interviews for software engineers.</li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
+                                <li><strong>Testing & Debugging:</strong> Write automated unit and integration tests, and fix bugs to ensure software quality.</li>
+                                <li><strong>Collaboration:</strong> Work with cross-functional teams, including designers, product owners, and QA engineers.</li>
+                                <li><strong>Documentation:</strong> Create technical documentation like database schema diagrams, sequence diagrams, and flowcharts for future reference.</li>
+                                <li><strong>Performance Optimization:</strong> Improve the efficiency of applications.</li>
+                                <li><strong>Automation:</strong> Automate manual processes by implementing generic background microservices.</li>
+                                <li><strong>Data Migration:</strong> Perform ETL data migration to ensure seamless data transfer across systems.</li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Implemented Solutions</h4>
-                  <ul>
-                      <li><strong>Microservice Development:</strong> Replaced a monolithic legacy system (.NET Framework 4.x) with a microservice-based automated data ingestion solution using .NET Core 3.1, improving scalability and efficiency. <i class="fa fa-info-circle tool"
-                                                                                                                                                                                                                                                        title="This service will download, extract and import 3600 complex XML files (5Gb total file size) into SQL Server and ElasticSearch. Optimized the processing time from 2 hours to 40 minutes. Database size is 10 Gb."></i></li>
-                      <li><strong>Performance Optimization:</strong> Enhanced the performance of eInvest Go and the Retail Online Platform by optimizing both front-end and back-end services for better responsiveness and reliability.</li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Implemented Solutions</h4>
+                            <ul>
+                                <li>
+                                    <strong>Automated Fulfillment:</strong> Developed a background microservice to reduce manual
+                                    processing.
+                                </li>
+                                <li><strong>IT Asset Management:</strong> Built a CMDB system for better IT asset tracking.</li>
+                                <li>
+                                    <strong>Automated Testing:</strong> Introduced and implemented automated unit and integration tests.
+                                </li>
+                                <li>
+                                    <strong>ETL Migration:</strong> Developed a .NET 6 ETL service to migrate data from MS Dataverse to SQL
+                                    Server,
+                                    cutting Azure costs by <strong>~$3,000/month</strong>.
+                                </li>
+                                <li>
+                                    <strong>Performance Optimization:</strong> Upgraded ETL migration (40M records) from .NET 6 to .NET 8,
+                                    achieving:
+                                    <ul>
+                                        <li><strong>16% faster</strong> bulk operations (7.3M records)</li>
+                                        <li><strong>30% faster</strong> smaller transactions (630K records)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <strong>Process Automation:</strong> Built a static HTML email utility and Power Automate workflows to
+                                    streamline internal tasks.
+                                </li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Extra Initiative</h4>
-                  <ul>
-                      <li><strong>Process Improvement:</strong> Initiated and developed productivity tracking reports in Jira to monitor team performance.</li>
-                      <li><strong>Versatility:</strong> Transitioned from backend to full-stack development by successfully taking over frontend responsibilities in Vue.js, despite the challenging learning curve.</li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4>Extra Initiative</h4>
+                            <ul>
+                                <li>
+                                    <strong>Tech Exploration:</strong> Researched SonarQube (code quality) and Dagster (data
+                                    orchestration) for future improvements.
+                                </li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4><mark>Accomplishments</mark></h4>
-                  <ul>
-                      <li><strong>Consistently High Performance:</strong> Consistently exceeded expectations in performance appraisals from Aug 2020 to Dec 2022.</li>
-                      <li><strong>Business Impact:</strong> Improved system reliability through REST API development and automated testing, leading to a 20% increase in online trading account openings (eInvest GO).</li>
-                  </ul>
-              </p>
+                        <p>
+                            <h4><mark>Accomplishments</mark></h4>
+                            <ul>
+                                <li>
+                                    <strong>Cost Reduction:</strong> Cut Azure costs by <strong>~$3,000/month</strong> through ETL
+                                    optimization.
+                                </li>
+                                <li>
+                                    <strong>Performance Gains:</strong> Boosted ETL efficiency by <strong>up to 30%</strong> in .NET 8
+                                    with no added infrastructure cost.
+                                </li>
+                            </ul>
+                        </p>
 
-              <p>
-                  <h4>Technology Stack</h4>
-                  <ul>
-                      <li>
-                          Backend (70%): C# Web Api, .NET Framework 4.x, .NET 2.2, .NET Core 3.1 <span class="fa fa-info-circle tool"
-                                                                                                                    title="HealthChecks, Swagger Swashbuckle, Hangfire, Serilog, smtp4dev"></span>,
-                          EF Core 3 <span class="fa fa-info-circle tool" title="SQL Server and PostgreSQL"></span>, NUnit,
-                          Xunit <span class="fa fa-info-circle tool" title="Unit Test, Integration Test"></span>, Specflow and
-                          Living Doc.
-                      </li>
-                      <li>
-                          Frontend (30%): VueJs (SFC), Vuex, Javascript, Jquery, Bootstrap, Pug, Scss, NPM,
-                          Gulp, Razor Pages.
-                      </li>
-                      <li>
-                          Others: Git, Atlassian Jira<span class="fa fa-info-circle tool"
-                                                                        title="setup workflow, Kanban, Agile, component, customization, roadmap, create board, create project"></span>,
-                          Confluence, Azure DevOps, IIS, Figma, Elastic Search, Kibana, <a href="https://youtu.be/2B0v8ZZZvj4">NEST</a>, Google Cloud Storage (Google Cloud Platform),
-                          mermaidJS, MarkMap.
-                      </li>
-                  </ul>
-              </p>
-          </div>
-        </div>
-        <div class="acc-container recent-employment">
-          <div class="acc-title">Software Engineer cum Trainer | <strong>Eduvo Sdn. Bhd.</strong> | Jun2015 - Aug2020
-          </div>
-          <div class="acc-content">
-            <p><a target="_blank" href="http://www.eduvoacademy.com.my/">Eduvo</a> is a vocational school for IT and
-              Business courses. My job scope are:</p>
-            <ul class="highlights">
-              <li>Accomplishment 1: After School Management System implemented, it increases productivity and the
-                reports help management to make better decision.</li>
-              <li>Accomplishment 2: Software engineering students increased by 300%. Graduated students are now working
-                as full-time programmer in software houses.</li>
-              <li>Accomplishment 3: Automated complex school timetable which could generate the complete timetable for
-                all the courses for the entire year where each course is tied to a course lecturer.</li>
-              <li>Design and develop training programme (Prof. Diploma in Software Engineering).</li>
-              <li>Conduct classroom training for software engineering courses: Object-Oriented Programming, Database
-                Design, Web Programming, System Analysis and Design, Data Structure and Algorithm and Software
-                Architecture.</li>
-              <li>Design, developed and maintain School Management System.</li>
-              <li>Lead Education &amp; Operation division.</li>
-              <li>Technology: C# MVC, Entity-Framework (Code-First), SQL, LINQ, Javascript, CSS, HTML.</li>
-            </ul>
-          </div>
-        </div>
-        <!-- + -->
-        <div class="acc-container">
-          <div class="acc-title">QC Manager | <strong>GHL Systems Bhd</strong> | Dec2012 - Jan2015</div>
-          <div class="acc-content">
-            <p><a target="_blank" href="https://www.ghl.com/">GHL</a> is a leading payment service provider and one of
-              the top merchant acquirers in the ASEAN region. We provide world-class payment services and solutions. My
-              job scope are:</p>
-            <ul class="highlights">
-              <li>Reported to CTO.</li>
-              <li>Created complex monthly IT Resource Utilization report for CTO.</li>
-              <li>Managed Product Management department.</li>
-              <li>Ensured product gets certified, especially Terminal Quality Management (TQM).</li>
-              <li>Handled software and product documentation, i.e user guide, sequence / process flow diagram and matrix
-                diagram.</li>
-              <li>Ensured proper source control and software repositories backup and replicated for all the regions
-                (Malaysia, Thailand, Philipinnes and Wuhan).</li>
-              <li>Planned and coordinated training for Level 1 and Level 2 Support.</li>
-              <li>Maintained maintenance agreement.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="acc-container">
-          <div class="acc-title">Software Consultant | <strong>BCS Information Systems</strong> | Aug2008 -
-            Dec2012</div>
-          <div class="acc-content">
-              <p>
-                  <a target="_blank" href="http://www.bcsis.com/">BCS Information Systems</a> is the systems integrator for
-                  real-time payment infrastructure for central and commercial banks. My job scope are:
-              </p>
-              <ul class="highlights">
-                  <li>Provided L2 application support for the cheque clearing banking system, ensuring stability and smooth operations.</li>
-                  <li>
-                      Monitored and maintained key components of Cheque Clearing Banking System:
-                      <ul>
-                          <li>
-                              <strong>CTCS Gateway Interface (GWC):</strong>
-                              <ul>
-                                  <li>EPKI – Outward (GWC & Bank Host)</li>
-                                  <li>Inward Downloading (ISC, GWC & Bank Host)</li>
-                                  <li>Transmission (OCS & GWC, OCS & PODClient)</li>
-                              </ul>
-                          </li>
-                          <li><strong>Bank & BNM Web Modules:</strong> Branch and Routing Policy Request processing.</li>
-                          <li>
-                              <strong>Bank Negara Malaysia (BNM) Backend Host:</strong>
-                              <ul>
-                                  <li>Inward Generation</li>
-                                  <li>Billing & Settlement File Generation</li>
-                                  <li>File & Data Archival</li>
-                                  <li>Reporting</li>
-                              </ul>
-                          </li>
-                          <li><strong>Other Systems:</strong> CSS (Billing & Settlement), RBE, FMS.</li>
-                      </ul>
-                  </li>
-                <li>Investigated problem logs, analyzed root causes, and provided resolutions to customers.</li>
-                <li>Created and updated technical documentation, including <em>sequence diagrams and process flows</em>.</li>
-                <li>Diagnosed and fixed system bugs, conducted System Integration Testing (SIT), and released patches.</li>
-                <li>Developed enhancements to improve existing system modules.</li>
-                  <li>Technology Stack: Java, J2EE, EJB, JSP, VB.NET and DB2 database, SQL.</li>
-              </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section" id="preference">
-      <header>
-        <h2 class="section-title">Job Status and Preference<span class="item-count"></span></h2>
-      </header>
-      <ul class="highlights">
-        <li><b>Status:</b> Open for opportunities</li>
-        <li><b>Location preference:</b> Work from office (hybrid)</li>
-        <li><b>Position preference:</b> Senior software engineer & MLOps Engineer</li>
-        <li><b>Expected salary range:</b><span id="salary">RM 13k-14k (permanent), RM 15k-16k (contract)</span>
-          <button id="show">show</button>
-        </li>
-        <li><b>Availability:</b> 3 months notice</li>
-      </ul>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class="section-title">Education<span class="item-count"></span></h2>
-      </header>
-      <ul class="highlights">
-        <li>Bachelor in Computing | <strong>University of Staffordshire</strong> | Year 2001 - 2002</li>
-        <li>Higher Diploma in Software Engineering | <strong>University of APU</strong> | Year 1998 - 2000</li>
-        <li> <a href="http://www.findingsteve.net/education-certification/">Certifications</a></li>
-      </ul>
-    </section>
-    <section class="section">
-        <header>
-            <h2 class="section-title">Languages</h2>
-        </header>
-        <ul class="highlights" id="languages">
-            <li class="highlight-item"><b>English:</b> Proficient</li>
-            <li class="highlight-item"><b>Cantonese:</b> Native language</li>
-        </ul>
-        <ul class="highlights" id="languages">            
-            <li class="highlight-item"><b>Bahasa Melayu:</b> Moderate</li>
-            <li class="highlight-item"><b>Mandarin:</b> Beginner</li>
-        </ul>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class="section-title">Interests</h2>
-      </header>
-      <ul class="highlights" id="interests">
-        <li><b>Modern board games:</b> Tokaido, Puerto Rico</li>
-        <li><b>Sports:</b> Futsal</li>
-      </ul>
-    </section>
-    <section class="section">
-      <header>
-        <h2 class="section-title">References</h2>
-      </header>
-      <section id="references">[References can be provided upon request. I have seven individuals who can serve as
-        references.]
+                        <p>
+                            <h4>Technology Stack</h4>
+                            <ul>
+                                <li><strong>Languages & Frameworks:</strong> C#, .NET 6, ASP.NET Razor Pages, MVVM</li>
+                                <li><strong>Backend Tools:</strong> Hangfire, Entity Framework Core</li>
+                                <li><strong>Databases:</strong> SQL Server, MS Dataverse</li>
+                                <li><strong>Monitoring & CI/CD:</strong> Azure App Insights, Health Checks, GitHub Actions</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+                <div class="acc-container recent-employment">
+                    <div class="acc-title">
+                        Full-Stack Software Engineer (Mid-Level) | 
+                            Affin Hwang Investment
+                            Bank
+                         | Aug2020 - July2022
+                    </div>
+                    <div class="acc-content">
+                        <p>
+                            <a target="_blank" href="https://affinhwang.com/">AFFIN Hwang Investment Bank Berhad</a> provides
+                            financial services. The Company offers stock brokerage, asset management, treasury bonds, currency
+                            exchange, financial advisory, and investment banking services.
+                        </p>
 
-        <!--.item
-        //- blockquote.reference
-        //-   | [to be given upon request]
-        //-   // &#8220;&#32;It is my pleasure to recommend Steve Ngai, his performance working as a trainer for Eduvo company proved that he will be a valuable addition to any company.&#32;&#8221;
-        //- .name
-        //-   // Keith, Vincent, Kok Keong, Kevin, Caroline, Rick
-        -->
-      </section>
-    </section>
-    <div class="headerParent">
-        <div class="child wider updated">
-            Updated: 2025-03-28
-            |
-            <button onclick="window.print()">Print / PDF</button>
-        </div>
-        <div class="child profilephoto">
-            <a href="#resume">To the top</a>&nbsp;|
-            <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
-  </div>
+                        <p>
+                            <h4>Key Responsibilities</h4>
+                            <ul>
+                                <li><strong>Coding & Development:</strong> Write clean, efficient, and maintainable code.</li>
+                                <li><strong>Testing & Debugging:</strong> Write automated unit tests, automated integration tests, and fix bugs to ensure software quality.</li>
+                                <li><strong>Collaboration:</strong> Work with solution architect, CTO, front-end tech lead, back-end tech leads, business analyst, UI/UX designer, data engineer, and end-users.</li>
+                                <li><strong>Documentation:</strong> Create technical documentation like database schema diagram, sequence diagram, and flowchart for future reference.</li>
+                                <li><strong>Performance Optimization:</strong> Improve the efficiency of applications or services.</li>
+                                <li><strong>Interviewing:</strong> Conduct interviews for software engineers.</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h4>Implemented Solutions</h4>
+                            <ul>
+                                <li>
+                                    <strong>Microservice Development:</strong> Replaced a monolithic legacy system (.NET Framework 4.x) with a microservice-based automated data ingestion solution using .NET Core 3.1, improving scalability and efficiency. <i class="fa fa-info-circle tool"
+                                                                                                                                                                                                                                                                  title="This service will download, extract and import 3600 complex XML files (5Gb total file size) into SQL Server and ElasticSearch. Optimized the processing time from 2 hours to 40 minutes. Database size is 10 Gb."></i>
+                                </li>
+                                <li><strong>Performance Optimization:</strong> Enhanced the performance of eInvest Go and the Retail Online Platform by optimizing both front-end and back-end services for better responsiveness and reliability.</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h4>Extra Initiative</h4>
+                            <ul>
+                                <li><strong>Process Improvement:</strong> Initiated and developed productivity tracking reports in Jira to monitor team performance.</li>
+                                <li><strong>Versatility:</strong> Transitioned from backend to full-stack development by successfully taking over frontend responsibilities in Vue.js, despite the challenging learning curve.</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h4><mark>Accomplishments</mark></h4>
+                            <ul>
+                                <li><strong>Consistently High Performance:</strong> Consistently exceeded expectations in performance appraisals from Aug 2020 to Dec 2022.</li>
+                                <li><strong>Business Impact:</strong> Improved system reliability through REST API development and automated testing, leading to a 20% increase in online trading account openings (eInvest GO).</li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            <h4>Technology Stack</h4>
+                            <ul>
+                                <li>
+                                    Backend (70%): C# Web Api, .NET Framework 4.x, .NET 2.2, .NET Core 3.1 <span class="fa fa-info-circle tool"
+                                                                                                                 title="HealthChecks, Swagger Swashbuckle, Hangfire, Serilog, smtp4dev"></span>,
+                                    EF Core 3 <span class="fa fa-info-circle tool" title="SQL Server and PostgreSQL"></span>, NUnit,
+                                    Xunit <span class="fa fa-info-circle tool" title="Unit Test, Integration Test"></span>, Specflow and
+                                    Living Doc.
+                                </li>
+                                <li>
+                                    Frontend (30%): VueJs (SFC), Vuex, Javascript, Jquery, Bootstrap, Pug, Scss, NPM,
+                                    Gulp, Razor Pages.
+                                </li>
+                                <li>
+                                    Others: Git, Atlassian Jira<span class="fa fa-info-circle tool"
+                                                                     title="setup workflow, Kanban, Agile, component, customization, roadmap, create board, create project"></span>,
+                                    Confluence, Azure DevOps, IIS, Figma, Elastic Search, Kibana, <a href="https://youtu.be/2B0v8ZZZvj4">NEST</a>, Google Cloud Storage (Google Cloud Platform),
+                                    mermaidJS, MarkMap.
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            <div class="acc-container recent-employment">
+                <div class="acc-title">
+                    Software Engineer cum Trainer | Eduvo Sdn Bhd | Jun2015 - Aug2020
+                </div>
+                <div class="acc-content">
+                    <p>
+                        <a target="_blank" href="http://www.eduvoacademy.com.my/">Eduvo</a> is a vocational school for IT and
+                        Business courses. My job scope are:
+                    </p>
+                    <ul class="highlights">
+                        <li>
+                            Accomplishment 1: After School Management System implemented, it increases productivity and the
+                            reports help management to make better decision.
+                        </li>
+                        <li>
+                            Accomplishment 2: Software engineering students increased by 300%. Graduated students are now working
+                            as full-time programmer in software houses.
+                        </li>
+                        <li>
+                            Accomplishment 3: Automated complex school timetable which could generate the complete timetable for
+                            all the courses for the entire year where each course is tied to a course lecturer.
+                        </li>
+                        <li>Design and develop training programme (Prof. Diploma in Software Engineering).</li>
+                        <li>
+                            Conduct classroom training for software engineering courses: Object-Oriented Programming, Database
+                            Design, Web Programming, System Analysis and Design, Data Structure and Algorithm and Software
+                            Architecture.
+                        </li>
+                        <li>Design, developed and maintain School Management System.</li>
+                        <li>Lead Education &amp; Operation division.</li>
+                        <li>Technology: C# MVC, Entity-Framework (Code-First), SQL, LINQ, Javascript, CSS, HTML.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- + -->
+            <div class="acc-container">
+                <div class="acc-title">QC Manager | GHL Systems Bhd | Dec2012 - Jan2015</div>
+                <div class="acc-content">
+                    <p>
+                        <a target="_blank" href="https://www.ghl.com/">GHL</a> is a leading payment service provider and one of
+                        the top merchant acquirers in the ASEAN region. We provide world-class payment services and solutions. My
+                        job scope are:
+                    </p>
+                    <ul class="highlights">
+                        <li>Reported to CTO.</li>
+                        <li>Created complex monthly IT Resource Utilization report for CTO.</li>
+                        <li>Managed Product Management department.</li>
+                        <li>Ensured product gets certified, especially Terminal Quality Management (TQM).</li>
+                        <li>
+                            Handled software and product documentation, i.e user guide, sequence / process flow diagram and matrix
+                            diagram.
+                        </li>
+                        <li>
+                            Ensured proper source control and software repositories backup and replicated for all the regions
+                            (Malaysia, Thailand, Philipinnes and Wuhan).
+                        </li>
+                        <li>Planned and coordinated training for Level 1 and Level 2 Support.</li>
+                        <li>Maintained maintenance agreement.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="acc-container">
+                <div class="acc-title">
+                    Software Consultant | BCS Information Systems | Aug2008 -
+                    Dec2012
+                </div>
+                <div class="acc-content">
+                    <p>
+                        <a target="_blank" href="http://www.bcsis.com/">BCS Information Systems</a> is the systems integrator for
+                        real-time payment infrastructure for central and commercial banks. My job scope are:
+                    </p>
+                    <ul class="highlights">
+                        <li>Provided L2 application support for the cheque clearing banking system, ensuring stability and smooth operations.</li>
+                        <li>
+                            Monitored and maintained key components of Cheque Clearing Banking System:
+                            <ul>
+                                <li>
+                                    <strong>CTCS Gateway Interface (GWC):</strong>
+                                    <ul>
+                                        <li>EPKI – Outward (GWC & Bank Host)</li>
+                                        <li>Inward Downloading (ISC, GWC & Bank Host)</li>
+                                        <li>Transmission (OCS & GWC, OCS & PODClient)</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Bank & BNM Web Modules:</strong> Branch and Routing Policy Request processing.</li>
+                                <li>
+                                    <strong>Bank Negara Malaysia (BNM) Backend Host:</strong>
+                                    <ul>
+                                        <li>Inward Generation</li>
+                                        <li>Billing & Settlement File Generation</li>
+                                        <li>File & Data Archival</li>
+                                        <li>Reporting</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Other Systems:</strong> CSS (Billing & Settlement), RBE, FMS.</li>
+                            </ul>
+                        </li>
+                        <li>Investigated problem logs, analyzed root causes, and provided resolutions to customers.</li>
+                        <li>Created and updated technical documentation, including <em>sequence diagrams and process flows</em>.</li>
+                        <li>Diagnosed and fixed system bugs, conducted System Integration Testing (SIT), and released patches.</li>
+                        <li>Developed enhancements to improve existing system modules.</li>
+                        <li>Technology Stack: Java, J2EE, EJB, JSP, VB.NET and DB2 database, SQL.</li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            </section>
+            <section class="section" id="preference">
+                <header>
+                    <h2 class="section-title">Job Status and Preference<span class="item-count"></span></h2>
+                </header>
+                <ul class="highlights">
+                    <li><b>Status:</b> Open for opportunities</li>
+                    <li><b>Location preference:</b> Work from office (hybrid)</li>
+                    <li><b>Position preference:</b> Senior software engineer & MLOps Engineer</li>
+                    <li>
+                        <b>Expected salary range:</b><span id="salary">RM 13k-14k (permanent), RM 15k-16k (contract)</span>
+                        <button id="show">show</button>
+                    </li>
+                    <li><b>Availability:</b> 3 months notice</li>
+                </ul>
+            </section>
+            <section class="section">
+                <header>
+                    <h2 class="section-title">Education<span class="item-count"></span></h2>
+                </header>
+                <ul class="highlights">
+                    <li>Bachelor in Computing | <strong>University of Staffordshire</strong> | Year 2001 - 2002</li>
+                    <li>Higher Diploma in Software Engineering | <strong>University of APU</strong> | Year 1998 - 2000</li>
+                    <li> <a href="http://www.findingsteve.net/education-certification/">Certifications</a></li>
+                </ul>
+            </section>
+            <section class="section">
+                <header>
+                    <h2 class="section-title">Languages</h2>
+                </header>
+                <ul class="highlights" id="languages">
+                    <li class="highlight-item"><b>English:</b> Proficient</li>
+                    <li class="highlight-item"><b>Cantonese:</b> Native language</li>
+                </ul>
+                <ul class="highlights" id="languages">
+                    <li class="highlight-item"><b>Bahasa Melayu:</b> Moderate</li>
+                    <li class="highlight-item"><b>Mandarin:</b> Beginner</li>
+                </ul>
+            </section>
+            <section class="section">
+                <header>
+                    <h2 class="section-title">Interests</h2>
+                </header>
+                <ul class="highlights" id="interests">
+                    <li><b>Modern board games:</b> Tokaido, Puerto Rico</li>
+                    <li><b>Sports:</b> Futsal</li>
+                </ul>
+            </section>
+            <section class="section">
+                <header>
+                    <h2 class="section-title">References</h2>
+                </header>
+                <section id="references">
+                    [References can be provided upon request. I have seven individuals who can serve as
+                    references.]
+
+                    <!--.item
+                    //- blockquote.reference
+                    //-   | [to be given upon request]
+                    //-   // &#8220;&#32;It is my pleasure to recommend Steve Ngai, his performance working as a trainer for Eduvo company proved that he will be a valuable addition to any company.&#32;&#8221;
+                    //- .name
+                    //-   // Keith, Vincent, Kok Keong, Kevin, Caroline, Rick
+                    -->
+                </section>
+            </section>
+            <div class="headerParent">
+                <div class="child wider updated">
+                    Updated: 2025-03-28
+                    |
+                    <button onclick="window.print()">Print / PDF</button>
+                </div>
+                <div class="child profilephoto">
+                    <a href="#resume">To the top</a>&nbsp;|
+                    <button type="button" name="dark_light" onclick="toggleDarkLight()" title="Toggle dark/light mode">🌛</button>
+                </div>
+            </div>
+            <script src="script.js"></script>
+            </div>
+            <!-- Tooltip Container -->
+            <div id="tooltip" class="tooltip">
+                Click the title to expand / collapse.
+            </div>
 </body>

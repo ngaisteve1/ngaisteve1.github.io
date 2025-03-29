@@ -12,3 +12,47 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+function showTooltip(event) {
+    let tooltip = document.getElementById("tooltip");
+
+    // Position tooltip near the clicked help icon
+    tooltip.style.left = event.pageX + "px";
+    tooltip.style.top = event.pageY + 20 + "px";
+
+    tooltip.style.display = "block";
+
+    // Hide tooltip after 2 seconds
+    setTimeout(() => {
+        tooltip.style.display = "none";
+    }, 2000);
+}
+
+// Expand/Collapse Sections
+document.querySelectorAll(".toggle").forEach(button => {
+    button.addEventListener("click", function () {
+        let content = this.nextElementSibling.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const accTitles = document.querySelectorAll('.acc-title');
+
+    accTitles.forEach(title => {
+        title.addEventListener('click', function () {
+            // Toggle the active class to expand/collapse the content
+            this.classList.toggle('active');
+            const accContent = this.nextElementSibling;
+            if (accContent.style.display === 'block') {
+                accContent.style.display = 'none';
+            } else {
+                accContent.style.display = 'block';
+            }
+
+            // Highlight the text
+            accTitles.forEach(t => t.classList.remove('highlight')); // Remove highlight from other titles
+            this.classList.add('highlight'); // Add highlight to the clicked title
+        });
+    });
+});
