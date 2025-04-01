@@ -6,6 +6,10 @@
     margin-bottom: 20px;
 }
 
+mark {
+    background-color: cyan;
+}
+
 .highlight {
     background-color: #ff0
 }
