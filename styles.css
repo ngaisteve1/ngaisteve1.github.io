@@ -734,7 +734,8 @@ ul.keywords {
     .skill-alternate {
         border: 1px solid #ccc;
         border-radius: 8px;
-        padding: 5px !important
+        padding: 2px !important;
+        margin-bottom: 5px;
     }
 
     #experience .acc-container {
@@ -791,31 +792,31 @@ ul.keywords {
         padding: 0
     }
 
-        ul.keywords li {
-            margin: 0;
-            padding: 0;
-            font-size: .8rem;
-            text-transform: lowercase;
-            color: #000 !important
+        ul.keywords li {  
+           margin: 0;  
+           padding: 0;  
+           font-size: .8rem;  
+           text-transform: lowercase;  
+           color: #000 !important  
+        }  
+
+        ul.keywords li.active:not(:last-child)::after {  
+           padding: 0 0 0 .1rem;  
+           content: " ,";  
         }
 
-            ul.keywords li.active:not(:last-child)::after {
-                padding: 0 0 0 .1rem;
-                content: " ,"
-            }
+        ul.keywords li.active:last-child::after {  
+           content: "";  
+        }  
 
-            ul.keywords li.active:last-child::after {
-                content: ""
-            }
+        ul.keywords li.active {  
+           border: 0 !important;  
+           color: #000 !important  
+        }  
 
-            ul.keywords li.active {
-                border: 0 !important;
-                color: #000 !important
-            }
-
-        li.inactive {
-            display: none !important
-        }
+        li.inactive {  
+           display: none !important  
+        }  
 
     .acc-content {
         height: auto !important;
