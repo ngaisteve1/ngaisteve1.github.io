@@ -625,12 +625,14 @@
                     <div class="acc-title highlight">POCs and Experiments | Aug2020 - now</div>
                     <div class="acc-content">
                         <ul class="highlights">
-                            <li>May 2025: Developed a POC of Retrieval Augmented Generation (RAG) pipeline using Python,
-                                Sentence Transformers, ChromaDB, and the LM Studio API (running on localhost) to enable
-                                HR policy question
-                                answering. Implemented text chunking with Langchain, vector embedding generation, and
-                                similarity search to retrieve relevant policy excerpts, and used LM Studio to synthesize
-                                answers. | <a href="https://github.com/ngaisteve1/hr_rag">Code</a>.</li>
+                            <li>May 2025: Developed a configurable RAG pipeline in
+                                Python for HR policy question answering, utilizing Sentence Transformers for embeddings,
+                                ChromaDB for vector storage, and the LM Studio API. Implemented dynamic model selection
+                                for both embedding generation and answer synthesis, enabling seamless switching between
+                                models such as Zephyr and Llama 3.2, enhancing flexibility and adaptability.
+                                Employed Langchain's RecursiveCharacterTextSplitter with prioritized separators for
+                                effective text chunking and similarity search for relevant context retrieval | <a
+                                    href="https://github.com/ngaisteve1/hr_rag">Code</a>.</li>
                             <li>May 2025: Configured and deployed LM Studio with Ollama 3.2 API server locally, serving
                                 the llama-3.2-3b-instruct model; developed a Python client to connect via HTTP API and
                                 retrieve AI-generated responses | <a href="https://youtu.be/V28BxyIk1xQ">Demo</a> | <a
