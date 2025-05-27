@@ -843,4 +843,14 @@ ul.keywords {
     .acc-title {
         font-size: 13px !important
     }
+
+    .sectionSkill .item,
+    #skills .item,
+    .accordion .item {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
 }
