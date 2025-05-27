@@ -913,9 +913,8 @@ ul.keywords li:hover {
         font-size: 13px !important
     }
 
-    .sectionSkill .item,
-    #skills .item,
-    .accordion .item {
+    .sectionSkill,
+    .sectionSkill * {
         display: none !important;
     }
 }
