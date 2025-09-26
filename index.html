@@ -67,14 +67,12 @@
             </div>
         </div>
         <section class="section main-summary">
-            I completed my Higher Diploma in Software Engineering and earned my Computing
-            degree (with Honours) from the University of Staffordshire. Over the past five years, I have gained
-            extensive
-            experience in modern software development with C#.NET and Azure, including roles at multinational companies
-            (MNCs). I have supported the eSPICK system for the central bank (Bank Negara) and worked with commercial and
-            investment banks. Currently, as a Senior Software Engineer at Arvato, I focus on writing clean,
-            maintainable, and
-            testable code. I enjoy exploring modern technologies, and recently, I have been exploring GenAI / MLOps.
+            I am a software engineer with a passion for innovation and process automation, holding a Computing degree
+            (Hons) from Staffordshire University. With over 5 years of experience in C#.NET and Azure at multinational
+            companies, I’ve contributed to mission-critical systems like eSPICK for Malaysia’s central bank and
+            supported both commercial and investment banking domains. Currently a Senior Software Engineer at Arvato, I
+            focus on building clean, scalable, and maintainable solutions. I actively explore practical AI and GenAI use
+            cases to boost productivity and drive real business value.
         </section>
         <section class="section sectionSkill">
             <header>
@@ -529,6 +527,8 @@
                             <li><strong>Documentation:</strong> Create technical documentation like database schema
                                 diagrams, sequence diagrams, flowcharts, and state diagrams for future reference and
                                 team use.</li>
+                            <!-- <li>Maintaining and enhancing applications built on event-driven architecture using Azure
+                                Service Bus</li> -->
                             <li><strong>Performance Optimization:</strong> Improve the efficiency of the CI pipeline.
                             </li>
                             <li><strong>Process:</strong> Participate in Agile Scrum processes, including daily
@@ -562,6 +562,7 @@
                             <li><strong>CI/CD Optimization:</strong> Implemented a file-based (auto) test-skipping
                                 mechanism and added manual test-skipping via [skip-test] in commit messages, reducing CI
                                 pipeline time by <strong>66%</strong>.</li>
+                            <li><strong>Security:</strong> Proposed and implemented a major code refactoring of the application's security layer by centralizing access control into a unified security service, replacing manual validations, resolving critical IDOR vulnerabilities, and improving maintainability.</li>
                         </ul>
                         </p>
 
@@ -615,12 +616,12 @@
                             <li><strong>Languages & Frameworks:</strong> C#, .NET Framework 4.8, .NET 8, Web API</li>
                             <li><strong>Backend Tools:</strong> Swagger (Swashbuckle), Hangfire, Serilog, Seq</li>
                             <li><strong>Databases:</strong> SQL Server, Entity Framework Core 8</li>
-                            <li><strong>Cloud & DevOps:</strong> Azure Container Registry, Azure DevOps, Docker</li>
-                            <li><strong>Monitoring & Testing:</strong> Azure Application Insights, NUnit (Unit Test,
+                            <li><strong>Cloud & DevOps:</strong> GitHub, Azure DevOps, Azure Function, Azure Service Bus</li>
+                            <li><strong>Monitoring & Testing:</strong> Azure Application Insights, NUnit, MsTest (Unit Test,
                                 Integration Test)</li>
                             <li><strong>Frontend:</strong> JavaScript</li>
                             <li>
-                                <strong>Design Patterns & Principles:</strong> Monolith, Factory Pattern, Strategy
+                                <strong>Design Patterns & Principles:</strong> Monolith, Microservices, Factory Pattern, Strategy
                                 Pattern,
                                 Query Object Pattern, Repository Pattern, DRY, YAGNI, SOC, OOP, Dependency Injection
                                 (DI), MVC
@@ -635,12 +636,24 @@
                     <div class="acc-title highlight">POCs and Experiments | Aug2020 - now</div>
                     <div class="acc-content">
                         <ul class="highlights">
+                            <li>May 2025: Developed a configurable RAG pipeline in
+                                Python for HR policy question answering, utilizing Sentence Transformers for embeddings,
+                                ChromaDB for vector storage, and the LM Studio API. Implemented dynamic model selection
+                                for both embedding generation and answer synthesis, enabling seamless switching between
+                                models such as Zephyr and Llama 3.2, enhancing flexibility and adaptability.
+                                Employed Langchain's RecursiveCharacterTextSplitter with prioritized separators for
+                                effective text chunking and similarity search for relevant context retrieval | <a
+                                    href="https://github.com/ngaisteve1/hr_rag">Code</a>.</li>
+                            <li>May 2025: Configured and deployed LM Studio with Ollama 3.2 API server locally, serving
+                                the llama-3.2-3b-instruct model; developed a Python client to connect via HTTP API and
+                                retrieve AI-generated responses | <a href="https://youtu.be/V28BxyIk1xQ">Demo</a> | <a
+                                    href="https://github.com/ngaisteve1/ollama">Code</a>.</li>
                             <li>
                                 Jan 2025: Developed a POC using Python and Retrieval-Augmented Generation (RAG)
                                 with a Pinecone-based assistant integrated with LLM GPT-4. Enabled natural language
                                 querying of PDF
                                 documents, including ebooks and HR policies, with responses strictly derived from
-                                uploaded content. | <a href="https://www.youtube.com/watch?v=HIee-2VZVdI">Demo</a>.
+                                uploaded content | <a href="https://www.youtube.com/watch?v=HIee-2VZVdI">Demo</a>.
                             <li>
                                 Jan 2025: <a href="https://github.com/ngaisteve1/huggingface_demo">
                                     Developed a POC using the BART

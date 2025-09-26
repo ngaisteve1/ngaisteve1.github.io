@@ -55,7 +55,8 @@ img {
     height: auto
 }
 
-div, section {
+div,
+section {
     max-width: 100%;
     overflow-x: hidden
 }
@@ -81,80 +82,117 @@ div, section {
     max-width: 150px
 }
 
-    .profilephoto img {
-        max-width: 100%;
-        height: auto;
-        display: block
-    }
+.profilephoto img {
+    max-width: 100%;
+    height: auto;
+    display: block
+}
 
 #resume.dark-mode {
     background-color: #40484f;
     color: #eee
 }
 
-    #resume.dark-mode a {
-        color: #82caff
-    }
+#resume.dark-mode a {
+    color: #82caff
+}
 
-    #resume.dark-mode #header, #resume.dark-mode h2.label {
-        color: #eee
-    }
+#resume.dark-mode #header,
+#resume.dark-mode h2.label {
+    color: #eee
+}
 
-    #resume.dark-mode h2.section-title {
-        background-color: #40484f
-    }
+#resume.dark-mode h2.section-title {
+    background-color: #40484f
+}
 
-    #resume.dark-mode .main-summary {
-        background-color: #000;
-        color: #eee
-    }
+#resume.dark-mode .main-summary {
+    background-color: #000;
+    color: #eee
+}
 
-    #resume.dark-mode .acc-title.highlight {
-        background-color: #000;
-        color: #fff
-    }
+#resume.dark-mode .acc-title.highlight {
+    background-color: #000;
+    color: #fff
+}
 
-    #resume.dark-mode button {
-        background-color: #40484f;
-        color: #82caff
-    }
+#resume.dark-mode button {
+    background-color: #40484f;
+    color: #82caff
+}
 
-    #resume.dark-mode .fa-file-pdf-o, #resume.dark-mode .github, #resume.dark-mode .linkedin, #resume.dark-mode .stack-overflow {
-        color: #fff
-    }
+#resume.dark-mode .fa-file-pdf-o,
+#resume.dark-mode .github,
+#resume.dark-mode .linkedin,
+#resume.dark-mode .stack-overflow {
+    color: #fff
+}
 
-    #resume.dark-mode em {
-        color: #fff
-    }
+#resume.dark-mode em {
+    color: #fff
+}
 
-    #resume.dark-mode .acc-active .acc-title, #resume.dark-mode .acc-title:hover {
-        background-color: #000
-    }
+#resume.dark-mode .acc-active .acc-title,
+#resume.dark-mode .acc-title:hover {
+    background-color: #000
+}
 
-    #resume.dark-mode ul.keywords li.inactive {
-        background-color: #000;
-        color: #000
-    }
+#resume.dark-mode ul.keywords li.inactive {
+    background-color: #000;
+    color: #000
+}
 
-    #resume.dark-mode ul.keywords li.active {
-        background-color: #000;
-        color: #fff
-    }
+#resume.dark-mode ul.keywords li.active {
+    background-color: #000;
+    color: #fff
+}
 
 #resume.light-mode {
     background-color: #fff;
     color: #40484f
 }
 
-    #resume.light-mode a {
-        color: #0095ff
-    }
+#resume.light-mode a {
+    color: #0095ff
+}
 
-    #resume.light-mode .main-summary {
-        background-color: #f1f8ff
-    }
+#resume.light-mode .main-summary {
+    background-color: #f1f8ff
+}
 
-a, address, b, blockquote, body, code, div, em, h1, h2, h3, h4, h5, h6, header, html, i, img, label, li, mark, object, p, q, ruby, s, section, span, strong, summary, table, time, ul {
+a,
+address,
+b,
+blockquote,
+body,
+code,
+div,
+em,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+label,
+li,
+mark,
+object,
+p,
+q,
+ruby,
+s,
+section,
+span,
+strong,
+summary,
+table,
+time,
+ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -162,7 +200,8 @@ a, address, b, blockquote, body, code, div, em, h1, h2, h3, h4, h5, h6, header, 
     vertical-align: baseline
 }
 
-header, section {
+header,
+section {
     display: block
 }
 
@@ -174,13 +213,17 @@ ul {
     list-style: none
 }
 
-blockquote, q {
+blockquote,
+q {
     quotes: none
 }
 
-    blockquote:after, blockquote:before, q:after, q:before {
-        content: none
-    }
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: none
+}
 
 table {
     border-collapse: collapse;
@@ -188,7 +231,7 @@ table {
 }
 
 @font-face {
-    font-family: Mulish,sans-serif;
+    font-family: Mulish, sans-serif;
     font-weight: 400;
     font-style: normal;
     src: url(fonts/OpenSans-Regular.woff2) format("woff2");
@@ -200,7 +243,7 @@ html {
 }
 
 body {
-    font-family: Mulish,sans-serif;
+    font-family: Mulish, sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0;
@@ -214,12 +257,12 @@ button {
     background-color: #fff
 }
 
-    button.dark-mode-btn {
-        position: absolute;
-        z-index: 1;
-        top: 20;
-        right: 20
-    }
+button.dark-mode-btn {
+    position: absolute;
+    z-index: 1;
+    top: 20;
+    right: 20
+}
 
 span#salary {
     display: none
@@ -238,10 +281,10 @@ a {
     text-decoration: none
 }
 
-    a:hover {
-        color: #0c65a5;
-        text-decoration: underline
-    }
+a:hover {
+    color: #0c65a5;
+    text-decoration: underline
+}
 
 li {
     list-style-type: square;
@@ -249,7 +292,7 @@ li {
     margin-left: 1.3em
 }
 
-.highlights > li > p {
+.highlights>li>p {
     margin-bottom: .5em
 }
 
@@ -294,7 +337,8 @@ strong {
     padding: 0
 }
 
-#header > #pdf, #header > #profiles {
+#header>#pdf,
+#header>#profiles {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -306,7 +350,9 @@ strong {
     justify-content: flex-start
 }
 
-#interests, #languages, #skills {
+#interests,
+#languages,
+#skills {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -318,13 +364,13 @@ strong {
     justify-content: space-between
 }
 
-#header > div {
+#header>div {
     line-height: 1.5
 }
 
-    #header > div > div {
-        margin-right: 15px
-    }
+#header>div>div {
+    margin-right: 15px
+}
 
 #header h1.name {
     font-size: 2.8rem;
@@ -350,9 +396,9 @@ strong {
     margin-top: 1rem
 }
 
-    .main-summary p {
-        margin: .15em 0 0
-    }
+.main-summary p {
+    margin: .15em 0 0
+}
 
 h2.section-title {
     display: inline-block;
@@ -364,7 +410,7 @@ h2.section-title {
     font-size: 1rem
 }
 
-.section > header {
+.section>header {
     position: relative;
     margin-bottom: .5em
 }
@@ -381,7 +427,7 @@ h2.section-title {
     color: #25d366
 }
 
-.section > header::after {
+.section>header::after {
     position: absolute;
     left: 0;
     top: .7em;
@@ -393,25 +439,31 @@ h2.section-title {
     display: block
 }
 
-.section.main-summary > section {
+.section.main-summary>section {
     margin: 0
 }
 
-.section > section > header {
+.section>section>header {
     font-size: 1.38rem;
     position: relative;
     margin-top: .7em
 }
 
-    .section > section > header:first-of-type {
-        margin: 0
-    }
+.section>section>header:first-of-type {
+    margin: 0
+}
 
-.company, .date, .position, .title {
+.company,
+.date,
+.position,
+.title {
     display: inline
 }
 
-.language, .name, .position, .title {
+.language,
+.name,
+.position,
+.title {
     font-weight: 600
 }
 
@@ -435,26 +487,27 @@ ul.keywords {
     margin-top: .5em
 }
 
-    ul.courses li, ul.keywords li {
-        display: inline-block;
-        margin: 2px 2px 2px 0;
-        padding: 4px 5px 5px;
-        font-size: .9rem;
-        line-height: 1;
-        text-transform: lowercase;
-        color: #3e6d8e;
-        background-color: #dfeaf1;
-        border: 0 solid #dfeaf1;
-        white-space: nowrap
-    }
+ul.courses li,
+ul.keywords li {
+    display: inline-block;
+    margin: 2px 2px 2px 0;
+    padding: 4px 5px 5px;
+    font-size: .9rem;
+    line-height: 1;
+    text-transform: lowercase;
+    color: #3e6d8e;
+    background-color: #dfeaf1;
+    border: 0 solid #dfeaf1;
+    white-space: nowrap
+}
 
-        ul.keywords li.inactive {
-            display: none
-        }
+ul.keywords li.inactive {
+    display: none
+}
 
-        ul.keywords li:hover {
-            background: #dfeaf0
-        }
+ul.keywords li:hover {
+    background: #dfeaf0
+}
 
 .item {
     padding: 2em 0
@@ -481,16 +534,18 @@ ul.keywords {
     position: relative
 }
 
-    .stack-overflow::after {
-        position: absolute;
-        left: 0;
-        content: "\f16c";
-        color: #f68a1f;
-        overflow: hidden;
-        height: 100%
-    }
+.stack-overflow::after {
+    position: absolute;
+    left: 0;
+    content: "\f16c";
+    color: #f68a1f;
+    overflow: hidden;
+    height: 100%
+}
 
-#interests .item, #languages .item, #skills .item {
+#interests .item,
+#languages .item,
+#skills .item {
     width: 15em;
     padding: 0 .5em .5em 0;
     border-bottom: none
@@ -500,9 +555,9 @@ ul.keywords {
     width: 16em
 }
 
-    #skills .item .keywords {
-        width: 15em
-    }
+#skills .item .keywords {
+    width: 15em
+}
 
 .level {
     margin-bottom: .5em
@@ -533,31 +588,32 @@ ul.keywords {
     text-underline-position: under
 }
 
-    .acc-title.highlight {
-        background-color: #f9f9c5
-    }
+.acc-title.highlight {
+    background-color: #f9f9c5
+}
 
-    .acc-title.highlight2 {
-        background-color: #b2ebf2
-    }
+.acc-title.highlight2 {
+    background-color: #b2ebf2
+}
 
-    .acc-title.highlight3 {
-        background-color: #ffb74d
-    }
+.acc-title.highlight3 {
+    background-color: #ffb74d
+}
 
-    .acc-active .acc-title, .acc-title:hover {
-        cursor: pointer
-    }
+.acc-active .acc-title,
+.acc-title:hover {
+    cursor: pointer
+}
 
-    .acc-title:after {
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        margin-top: -12.5px;
-        width: 25px;
-        height: 25px;
-        display: inline-block
-    }
+.acc-title:after {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -12.5px;
+    width: 25px;
+    height: 25px;
+    display: inline-block
+}
 
 .acc-content p {
     margin-top: 10px
@@ -598,7 +654,7 @@ ul.keywords {
         margin: 2rem auto
     }
 
-    .section > section {
+    .section>section {
         margin-left: 1.67rem
     }
 
@@ -606,35 +662,35 @@ ul.keywords {
         transform: translate(-9999px)
     }
 
-        .toggle-item + label {
-            display: block;
-            margin-top: -16px
-        }
+    .toggle-item+label {
+        display: block;
+        margin-top: -16px
+    }
 
-        .toggle-item:checked + label:after {
-            content: "\f0d7"
-        }
+    .toggle-item:checked+label:after {
+        content: "\f0d7"
+    }
 
-        .toggle-item + label:after {
-            float: left;
-            cursor: pointer;
-            margin-left: -20px;
-            color: #aaa;
-            font-size: 16px;
-            content: "\f0da";
-            font-family: Fontawesome
-        }
+    .toggle-item+label:after {
+        float: left;
+        cursor: pointer;
+        margin-left: -20px;
+        color: #aaa;
+        font-size: 16px;
+        content: "\f0da";
+        font-family: Fontawesome
+    }
 
-        .toggle-item ~ .item {
-            height: 0;
-            opacity: 0
-        }
+    .toggle-item~.item {
+        height: 0;
+        opacity: 0
+    }
 
-        .toggle-item:checked ~ .item {
-            height: auto;
-            opacity: 1;
-            transition: all .5s linear
-        }
+    .toggle-item:checked~.item {
+        height: auto;
+        opacity: 1;
+        transition: all .5s linear
+    }
 
     .company::before {
         content: "| "
@@ -656,9 +712,9 @@ ul.keywords {
         max-width: 190px
     }
 
-        .display:not(.none) {
-            display: block
-        }
+    .display:not(.none) {
+        display: block
+    }
 
     .headerParent {
         width: 100%;
@@ -666,13 +722,13 @@ ul.keywords {
         flex-flow: row nowrap
     }
 
-        .headerParent > .child {
-            flex: 0 30%
-        }
+    .headerParent>.child {
+        flex: 0 30%
+    }
 
-        .headerParent > .wider {
-            flex: 70% 0
-        }
+    .headerParent>.wider {
+        flex: 70% 0
+    }
 
     .profilephoto {
         text-align: right
@@ -684,7 +740,8 @@ ul.keywords {
         margin: 0 auto
     }
 
-    #header h1.name, #header h2.label {
+    #header h1.name,
+    #header h2.label {
         font-size: 1rem;
         font-weight: bolder
     }
@@ -697,16 +754,18 @@ ul.keywords {
         max-width: 150px
     }
 
-    #interests, #languages {
+    #interests,
+    #languages {
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
         -webkit-justify-content: flex-start;
         justify-content: flex-start
     }
 
-        #interests li, #languages li {
-            width: 100%
-        }
+    #interests li,
+    #languages li {
+        width: 100%
+    }
 }
 
 @media screen and (min-width:700px) and (max-width:1280px) {
@@ -724,7 +783,9 @@ ul.keywords {
 }
 
 @media print {
-    body, html {
+
+    body,
+    html {
         font-size: 13px;
         line-height: 1.5;
         color: #000;
@@ -749,7 +810,9 @@ ul.keywords {
         page-break-before: always
     }
 
-    #languages, #skills, #interests {
+    #languages,
+    #skills,
+    #interests {
         display: block
     }
 
@@ -761,7 +824,8 @@ ul.keywords {
         padding: 0
     }
 
-    h1.name, h2.label {
+    h1.name,
+    h2.label {
         font-size: 1rem !important
     }
 
@@ -776,7 +840,10 @@ ul.keywords {
         text-decoration: none !important
     }
 
-    .fa, .linkedIn, .profilephoto, .stackOverFlow {
+    .fa,
+    .linkedIn,
+    .profilephoto,
+    .stackOverFlow {
         display: none !important
     }
 
@@ -788,35 +855,36 @@ ul.keywords {
         margin-top: .4em
     }
 
-    li, ul.keywords {
+    li,
+    ul.keywords {
         padding: 0
     }
 
-        ul.keywords li {  
-           margin: 0;  
-           padding: 0;  
-           font-size: .8rem;  
-           text-transform: lowercase;  
-           color: #000 !important  
-        }  
+    ul.keywords li {
+        margin: 0;
+        padding: 0;
+        font-size: .8rem;
+        text-transform: lowercase;
+        color: #000 !important
+    }
 
-        ul.keywords li.active:not(:last-child)::after {  
-           padding: 0 0 0 .1rem;  
-           content: " ,";  
-        }
+    ul.keywords li.active:not(:last-child)::after {
+        padding: 0 0 0 .1rem;
+        content: " ,";
+    }
 
-        ul.keywords li.active:last-child::after {  
-           content: "";  
-        }  
+    ul.keywords li.active:last-child::after {
+        content: "";
+    }
 
-        ul.keywords li.active {  
-           border: 0 !important;  
-           color: #000 !important  
-        }  
+    ul.keywords li.active {
+        border: 0 !important;
+        color: #000 !important
+    }
 
-        li.inactive {  
-           display: none !important  
-        }  
+    li.inactive {
+        display: none !important
+    }
 
     .acc-content {
         height: auto !important;
@@ -827,7 +895,8 @@ ul.keywords {
         padding: 0 0 !important
     }
 
-    a, html {
+    a,
+    html {
         color: #000 !important;
         text-decoration: none !important
     }
@@ -842,5 +911,10 @@ ul.keywords {
 
     .acc-title {
         font-size: 13px !important
+    }
+
+    .sectionSkill,
+    .sectionSkill * {
+        display: none !important;
     }
 }
