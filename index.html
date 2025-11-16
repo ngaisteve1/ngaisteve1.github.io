@@ -540,8 +540,7 @@
                             </li>
                             <li><strong>Completed POC (2025):</strong> Completed Hangfire-based centralized Job
                                 Scheduling in .NET 10.</li>
-                            <li><strong>Ongoing POC (2025):</strong> Developing AI Model Monitoring & Automated
-                                Retraining for Google Ad Click Prediction.</li>
+                            <li><strong>Ongoing POC (2025):</strong> Completed a POC that uses historical archive metadata (file size, type, frequency) to forecast archive volume and storage savings. The system automates retraining, monitors drift, and offers a Streamlit dashboard for visibility and control. Deployed using Azure Machine Learning and Streamlit Cloud with full MLOps integration. <a href="javascript:void(0)" id="openPocModal" style="cursor:pointer;text-decoration:underline;">📊 POC Overview</a></li>
                             <li><strong>Repository Optimization:</strong> Reduced repository size by
                                 <strong>24%</strong> by cleaning up the package folder.
                             </li>
@@ -1216,5 +1215,105 @@
     <!-- Tooltip Container -->
     <div id="tooltip" class="tooltip">
         Click the title to expand / collapse.
+    </div>
+    
+    <!-- POC Modal -->
+    <div id="pocModal" style="display:none;position:fixed;z-index:1000;left:0;top:0;width:100%;height:100%;background:rgba(0,0,0,0.5);overflow:auto;">
+        <div style="background:#fff;max-width:700px;margin:3% auto;padding:2.5em;border-radius:8px;position:relative;box-shadow:0 2px 16px rgba(0,0,0,0.2);font-family:Mulish, sans-serif;">
+            <span id="closePocModal" style="position:absolute;top:10px;right:18px;font-size:1.5em;cursor:pointer;user-select:none;">&times;</span>
+            
+            <h1 style="margin-bottom:0.5em;font-size:1.8em;">📊 Predictive Archiving & Storage Optimization (POC Overview)</h1>
+            
+            <h2 style="font-size:1.2em;margin-top:1.2em;margin-bottom:0.5em;">Short Description</h2>
+            <p>A lightweight proof-of-concept that uses historical archive metadata (file size, type, frequency) to forecast archive volume and storage savings. The system automates retraining, monitors drift, and offers a Streamlit dashboard for visibility and control. Deployed using Azure Machine Learning and Streamlit Cloud with full MLOps integration.</p>
+            
+            <hr style="margin:1.5em 0;border:none;border-top:1px solid #ccc;">
+            
+            <h2 style="font-size:1.2em;margin-bottom:0.8em;">🚀 Features</h2>
+            <ul style="margin-left:1.5em;">
+                <li style="margin-bottom:1em;">
+                    <strong>Forecasting & Prediction</strong>
+                    <ul style="margin-top:0.3em;margin-left:1.5em;">
+                        <li>Predict archive volume (GB) and expected storage savings for upcoming month or quarter.</li>
+                        <li>Trained on historical data such as file size, type, and frequency.</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:1em;">
+                    <strong>Automated Retraining & Drift Detection</strong>
+                    <ul style="margin-top:0.3em;margin-left:1.5em;">
+                        <li>Scheduled retraining checks every few hours.</li>
+                        <li>Detects anomalies or data drift using Isolation Forest.</li>
+                        <li>Records retraining runs and feedback for continuous improvement.</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:1em;">
+                    <strong>Model Monitoring</strong>
+                    <ul style="margin-top:0.3em;margin-left:1.5em;">
+                        <li>Performance and drift tracked through MLflow or Azure ML.</li>
+                        <li>Versioned model runs with retraining history.</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:1em;">
+                    <strong>Deployment as REST API</strong>
+                    <ul style="margin-top:0.3em;margin-left:1.5em;">
+                        <li>Served via Azure ML Endpoint or FastAPI on Azure Functions.</li>
+                    </ul>
+                </li>
+                <li style="margin-bottom:1em;">
+                    <strong>Interactive Dashboard</strong>
+                    <ul style="margin-top:0.3em;margin-left:1.5em;">
+                        <li>Built with Streamlit featuring:
+                            <ol style="margin-top:0.3em;margin-left:1.5em;">
+                                <li>Forecast results</li>
+                                <li>Data analysis and trends</li>
+                                <li>Monitoring and drift metrics</li>
+                                <li>Feedback collection</li>
+                                <li>Retraining logs and status</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <hr style="margin:1.5em 0;border:none;border-top:1px solid #ccc;">
+            
+            <h2 style="font-size:1.2em;margin-bottom:0.8em;">🧠 Tech Stack</h2>
+            
+            <h3 style="font-size:1.05em;font-weight:600;margin-top:1em;margin-bottom:0.5em;">Core ML & Data Processing</h3>
+            <ul style="margin-left:1.5em;">
+                <li><strong>Python</strong></li>
+                <li><strong>scikit-learn</strong>, <strong>pandas</strong>, <strong>numpy</strong> – Forecasting and data preparation</li>
+                <li><strong>MLflow</strong> – Experiment tracking, model registry</li>
+                <li><strong>APScheduler</strong> – Scheduled retraining checks</li>
+            </ul>
+            
+            <h3 style="font-size:1.05em;font-weight:600;margin-top:1em;margin-bottom:0.5em;">Web & Visualization</h3>
+            <ul style="margin-left:1.5em;">
+                <li><strong>Streamlit</strong> – Interactive dashboard UI</li>
+                <li><strong>Plotly</strong> – Charts and analytics</li>
+            </ul>
+            
+            <h3 style="font-size:1.05em;font-weight:600;margin-top:1em;margin-bottom:0.5em;">Azure Integration</h3>
+            <ul style="margin-left:1.5em;">
+                <li><strong>Azure Machine Learning Studio</strong> – Model orchestration, registry, and tracking</li>
+                <li><strong>Azure ML Endpoint</strong> – REST API hosting for real-time predictions</li>
+                <li><strong>Azure ML Monitoring</strong> – Performance and drift tracking</li>
+            </ul>
+            
+            <h3 style="font-size:1.05em;font-weight:600;margin-top:1em;margin-bottom:0.5em;">Database</h3>
+            <ul style="margin-left:1.5em;">
+                <li><strong>SQLite</strong> – Local storage for feedback, retraining logs, and predictions</li>
+            </ul>
+            
+            <h3 style="font-size:1.05em;font-weight:600;margin-top:1em;margin-bottom:0.5em;">Deployment & CI/CD</h3>
+            <ul style="margin-left:1.5em;">
+                <li><strong>Streamlit Cloud</strong> – Dashboard hosting with Git-based auto-deploy</li>
+                <li><strong>GitHub</strong> – Source control and integration (branch: <code style="background:#f0f0f0;padding:2px 4px;border-radius:3px;">ml-poc</code>)</li>
+            </ul>
+            
+            <div style="margin-top:2em;text-align:center;">
+                <button id="closePocModalBtn" style="padding:10px 20px;background:#007bff;color:#fff;border:none;border-radius:4px;cursor:pointer;font-size:1em;">Close</button>
+            </div>
+        </div>
     </div>
 </body>

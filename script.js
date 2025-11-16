@@ -1,4 +1,4 @@
-function initAccordion(e, t) { document.addEventListener("click", (function (n) { if (n.target.matches(e + " .acc-title")) if (n.target.parentElement.classList.contains("acc-active")) n.target.parentElement.classList.remove("acc-active"); else { if (1 == t) { var c = document.querySelectorAll(e + " .acc-container"); Array.prototype.forEach.call(c, (function (e) { e.classList.remove("acc-active") })) } n.target.parentElement.classList.add("acc-active") } })) } function toggleDarkLight() { var e = document.getElementById("resume"), t = e.className; e.className = "dark-mode" == t ? "light-mode" : "dark-mode" } initAccordion(".accordion.acc-single-open", !0); var scroll = new SmoothScroll('a[href*="#"]'); let salaryBtn = document.getElementById("show"); salaryBtn.addEventListener("click", (() => { salaryBtn.style.display = "none", document.getElementById("salary").style.display = "inline-block" })), document.addEventListener("DOMContentLoaded", (() => { const e = document.getElementById("so-reputation"); fetch("https://api.stackexchange.com/2.2/users/4971859?site=stackoverflow.com").then((e => e.json())).then((t => { t.items.length > 0 ? (e.innerText = `(${t.items[0].reputation})`, e.style.display = "inline-block") : e.style.display = "none" })).catch((e => console.error(e))) })), window.onbeforeprint = function () { var e = document.querySelector(".accordion.acc-single-open"); e && e.removeAttribute("id") };
+function initAccordion(e, t) { document.addEventListener("click", (function (n) { if (n.target.matches(e + " .acc-title")) if (n.target.parentElement.classList.contains("acc-active")) n.target.parentElement.classList.remove("acc-active"); else { if (1 == t) { var c = document.querySelectorAll(e + " .acc-container"); Array.prototype.forEach.call(c, (function (e) { e.classList.remove("acc-active") })) } n.target.parentElement.classList.add("acc-active") } })) } function toggleDarkLight() { var e = document.getElementById("resume"), t = e.className; e.className = "dark-mode" == t ? "light-mode" : "dark-mode" } initAccordion(".accordion.acc-single-open", !0); var scroll = new SmoothScroll('a[href*="#"]'); document.addEventListener("DOMContentLoaded", (() => { let salaryBtn = document.getElementById("show"); if (salaryBtn) { salaryBtn.addEventListener("click", (() => { salaryBtn.style.display = "none", document.getElementById("salary").style.display = "inline-block" })); } const e = document.getElementById("so-reputation"); if (e) { fetch("https://api.stackexchange.com/2.2/users/4971859?site=stackoverflow.com").then((e => e.json())).then((t => { t.items.length > 0 ? (e.innerText = `(${t.items[0].reputation})`, e.style.display = "inline-block") : e.style.display = "none" })).catch((e => console.error(e))); } })), window.onbeforeprint = function () { var e = document.querySelector(".accordion.acc-single-open"); e && e.removeAttribute("id") };
 
 document.addEventListener('DOMContentLoaded', function () {
     const sections = document.querySelectorAll('.acc-container');
@@ -55,4 +55,30 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.add('highlight'); // Add highlight to the clicked title
         });
     });
+});
+
+// POC Modal Handler - using event delegation for robustness
+document.addEventListener('click', function (e) {
+    if (e.target && e.target.id === 'openPocModal') {
+        e.preventDefault();
+        e.stopPropagation();
+        var modal = document.getElementById('pocModal');
+        if (modal) {
+            modal.style.display = 'block';
+        }
+    }
+    if (e.target && (e.target.id === 'closePocModal' || e.target.id === 'closePocModalBtn')) {
+        var modal = document.getElementById('pocModal');
+        if (modal) {
+            modal.style.display = 'none';
+        }
+    }
+});
+
+// Close modal when clicking outside of it
+document.addEventListener('click', function (event) {
+    var modal = document.getElementById('pocModal');
+    if (modal && event.target === modal) {
+        modal.style.display = 'none';
+    }
 });
