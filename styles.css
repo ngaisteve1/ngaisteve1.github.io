@@ -1,8 +1,8 @@
-﻿
-/* Modal Styles for POC Overview */
+﻿/* Modal Styles for POC Overview */
 #pocModal {
     animation: fadeIn 0.2s;
 }
+
 #pocModal .modal-content {
     background: #fff;
     max-width: 600px;
@@ -10,8 +10,9 @@
     padding: 2em;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
+
 #closePocModal {
     position: absolute;
     top: 10px;
@@ -19,10 +20,17 @@
     font-size: 1.5em;
     cursor: pointer;
 }
+
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
+
 .section-clicked {
     border: 3px dashed;
     background-color: #FFE1D1;
@@ -378,15 +386,11 @@ strong {
 #interests,
 #languages,
 #skills {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
-    -webkit-justify-content: space-between;
-    justify-content: space-between
+    justify-content: flex-start;
+    gap: 1rem 0;
+    width: 100%;
 }
 
 #header>div {
@@ -577,11 +581,18 @@ ul.keywords li:hover {
 }
 
 #skills .item {
-    width: 16em
+    width: 32%;
+    /* ~3-column layout on desktop */
+    box-sizing: border-box;
+    padding: 0 0.5em 0.5em 0;
+    border-bottom: none;
 }
 
 #skills .item .keywords {
-    width: 15em
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .level {
@@ -804,6 +815,30 @@ ul.keywords li:hover {
 
     .display {
         max-width: 180px
+    }
+}
+
+/* --- MOBILE SKILLS STYLES (Fixes stacked view & prevents border overflow) --- */
+@media screen and (max-width: 768px) {
+    #skills {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #skills .item {
+        width: 100% !important;
+        /* Forces single column on mobile */
+        max-width: 100%;
+        padding: 0.5em 0;
+    }
+
+    #skills .item .keywords {
+        width: 100% !important;
+    }
+
+    .section-clicked {
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
