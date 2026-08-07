@@ -978,3 +978,41 @@ ul.keywords li:hover {
         display: none !important;
     }
 }
+
+/* --- EXPERIENCE BREAKDOWN GRID FIX --- */
+.experience-breakdown {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem 2rem;
+    margin-bottom: 1.5rem;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience-breakdown li {
+    list-style-type: square;
+    margin-left: 1.3em;
+}
+
+@media screen and (max-width: 600px) {
+    .experience-breakdown {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* --- PERMANENTLY EXPAND SKILLS FOR ATS & RECRUITERS --- */
+#skills .acc-content {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    padding-bottom: 10px;
+}
+
+/* Hide accordion toggle behavior for the skills section specifically */
+#skills .acc-title {
+    cursor: default !important;
+}
+
+#skills .acc-title:after {
+    display: none !important;
+}
