@@ -611,6 +611,25 @@
                                 branding, module selection, and approval workflows for Technical, Business, Sales, and
                                 Platform Admin personas.
                             </li>
+                            <li>
+                                <strong>Two POC on Terraform, Github Actions and JSM API:</strong> POC 1 provisions a
+                                multi-tier containerized Azure stack—including App Service, SQL Database, Key Vault, and
+                                Storage—using Terraform, while leveraging Rover to visually map and preview the exact
+                                execution plan prior to
+                                provisioning (applying) the infrastructure. POC 2 focuses on GitOps governance and
+                                pipeline automation: it generates and
+                                preserves an exact Terraform plan, publishes the full plan summary to GitHub Pull
+                                Requests for review, and governs
+                                changes across GitHub Actions, Azure Functions, and Jira Service Management. In this
+                                pipeline, PipeGate creates and
+                                tracks the corresponding JSM ticket, while a separate manual-decision workflow accepts
+                                an approve or reject input before
+                                applying the exact saved plan file. Because the tested Jira request exposes no approval
+                                transitions, the current
+                                fallback stores the decision in Function memory and reports that Jira was unchanged,
+                                providing a clear demonstration
+                                baseline.
+                            </li>
                         </ul>
                         </p>
 
